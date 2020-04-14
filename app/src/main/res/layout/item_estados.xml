@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imagemEstado"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:layout_marginEnd="16dp"
+            tools:srcCompat="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/textNomeEstado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imagemEstado"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="4dp"
+            android:layout_toEndOf="@id/imagemEstado"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="12sp"
+            tools:text="SP" />
+
+        <TextView
+            android:id="@+id/textConfirmados"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textNomeEstado"
+            android:layout_marginTop="4dp"
+            android:layout_toEndOf="@id/imagemEstado"
+            android:text="@string/confirmed"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textNumeroConfirmados"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textNomeEstado"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="4dp"
+            android:textSize="12sp"
+            tools:text="0" />
+
+        <TextView
+            android:id="@+id/textMortes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textConfirmados"
+            android:layout_marginTop="4dp"
+            android:layout_toEndOf="@id/imagemEstado"
+            android:text="@string/deaths"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textNumeroMortes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textConfirmados"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="4dp"
+            android:textSize="12sp"
+            tools:text="0" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

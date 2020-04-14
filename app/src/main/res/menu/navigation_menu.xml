@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_brasil"
+        android:icon="@drawable/ic_brazil"
+        android:title="@string/brazil" />
+    <item
+        android:id="@+id/navigation_sintomas"
+        android:icon="@drawable/ic_lung"
+        android:title="@string/symptoms" />
+</menu>

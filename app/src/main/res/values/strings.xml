@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Covid19 Brasil</string>
+    <string name="brazil">Brasil</string>
+    <string name="symptoms">Sintomas</string>
+    <string name="fever">Febre</string>
+    <string name="covid_description">COVID-19 (do inglês Coronavirus Disease 2019) é uma doença infeciosa causada pelo coronavírus da síndrome respiratória aguda grave 2 (SARS-CoV-2).</string>
+    <string name="confirmed">Confirmados</string>
+    <string name="active">Ativos</string>
+    <string name="recovered">Recuperados</string>
+    <string name="deaths">Mortes</string>
+    <string name="states">Estados</string>
+    <string name="more_info">Para mais infomações acesse o site do Ministério da Saúde</string>
+    <string name="shortness_of_breath">Falta de Ar</string>
+    <string name="cough">Tosse</string>
+
+</resources>
