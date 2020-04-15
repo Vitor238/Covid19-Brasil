@@ -19,6 +19,8 @@ import com.vitor238.covid19brasil.model.Pais
 import kotlinx.android.synthetic.main.fragment_brasil.view.*
 import retrofit2.Call
 import retrofit2.Response
+import java.text.SimpleDateFormat
+import java.util.*
 
 /**
  * A simple [Fragment] subclass.
@@ -91,6 +93,23 @@ class BrasilFragment : Fragment() {
         fragmentView.textNumeroAtivos.text = dadosBrasil.cases.toString()
         fragmentView.textNumeroRecuperados.text = dadosBrasil.recovered.toString()
         fragmentView.textNumeroMortes.text = dadosBrasil.deaths.toString()
+        fragmentView.textDataAualizacao.text = formatarData(dadosBrasil.updated_at)
+    }
+
+    private fun formatarData(dataAtualizacao: String): String {
+        var simpleDateFormat = SimpleDateFormat(
+            "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'",
+            Locale.getDefault()
+        )
+        simpleDateFormat.timeZone = TimeZone.getTimeZone("UTC")
+        val data = simpleDateFormat.parse(dataAtualizacao)
+        return if (data != null) {
+            simpleDateFormat = SimpleDateFormat("dd MMM yyyy - HH:mm", Locale.getDefault())
+            simpleDateFormat.timeZone = TimeZone.getDefault()
+            simpleDateFormat.format(data)
+        } else {
+            getString(R.string.error)
+        }
     }
 
     override fun onStart() {

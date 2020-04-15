@@ -12,4 +12,6 @@
     <string name="fever">Fever</string>
     <string name="shortness_of_breath">Shortness of Breath</string>
     <string name="cough">Cough</string>
+    <string name="updatedAt">Updated at</string>
+    <string name="error">Error</string>
 </resources>

@@ -12,5 +12,7 @@
     <string name="more_info">Para mais infomações acesse o site do Ministério da Saúde</string>
     <string name="shortness_of_breath">Falta de Ar</string>
     <string name="cough">Tosse</string>
+    <string name="updatedAt">Atualizado em</string>
+    <string name="error">Erro</string>
 
 </resources>
