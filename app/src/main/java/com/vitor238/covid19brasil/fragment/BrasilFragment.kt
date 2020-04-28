@@ -11,6 +11,7 @@ import com.vitor238.covid19brasil.R
 import com.vitor238.covid19brasil.adapter.AdapterEstados
 import com.vitor238.covid19brasil.api.BrasilService
 import com.vitor238.covid19brasil.api.EstadosService
+import com.vitor238.covid19brasil.extension.formatarNumero
 import com.vitor238.covid19brasil.helper.RetrofitInitializer
 import com.vitor238.covid19brasil.model.Brasil
 import com.vitor238.covid19brasil.model.Estado
@@ -19,6 +20,7 @@ import com.vitor238.covid19brasil.model.Pais
 import kotlinx.android.synthetic.main.fragment_brasil.view.*
 import retrofit2.Call
 import retrofit2.Response
+import java.text.NumberFormat
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -89,10 +91,12 @@ class BrasilFragment : Fragment() {
     }
 
     private fun exibirDadosBrasil(dadosBrasil: Brasil) {
-        fragmentView.textNumeroConfirmados.text = dadosBrasil.confirmed.toString()
-        fragmentView.textNumeroAtivos.text = dadosBrasil.cases.toString()
-        fragmentView.textNumeroRecuperados.text = dadosBrasil.recovered.toString()
-        fragmentView.textNumeroMortes.text = dadosBrasil.deaths.toString()
+
+
+        fragmentView.textNumeroConfirmados.text = dadosBrasil.confirmed.formatarNumero()
+        fragmentView.textNumeroAtivos.text = dadosBrasil.cases.formatarNumero()
+        fragmentView.textNumeroRecuperados.text = dadosBrasil.recovered.formatarNumero()
+        fragmentView.textNumeroMortes.text = dadosBrasil.deaths.formatarNumero()
         fragmentView.textDataAualizacao.text = formatarData(dadosBrasil.updated_at)
     }
 
@@ -116,5 +120,10 @@ class BrasilFragment : Fragment() {
         super.onStart()
         carregarCasosBrasil()
         carregarCasosPorEstado()
+    }
+
+    public fun String.formatarNumero(numero: Int): String {
+        return NumberFormat.getIntegerInstance()
+            .format(numero)
     }
 }

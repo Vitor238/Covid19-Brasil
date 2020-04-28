@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.vitor238.covid19brasil.R
+import com.vitor238.covid19brasil.extension.formatarNumero
 import com.vitor238.covid19brasil.model.Estado
 import com.vitor238.covid19brasil.model.Sintoma
 
@@ -36,8 +37,8 @@ class AdapterEstados(private val context: Context, private val listaEstados: Lis
             .into(holder.imagemEstado)
 
         holder.textNomeEstado.text = estado.state
-        holder.textNumeroConfirmados.text = estado.cases.toString()
-        holder.textNumeroMortes.text = estado.deaths.toString()
+        holder.textNumeroConfirmados.text = estado.cases.formatarNumero()
+        holder.textNumeroMortes.text = estado.deaths.formatarNumero()
     }
 
     inner class ViewHolder(item: View) : RecyclerView.ViewHolder(item){
