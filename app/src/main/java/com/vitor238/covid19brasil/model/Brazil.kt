@@ -1,6 +1,6 @@
 package com.vitor238.covid19brasil.model
 
-data class Brasil(
+data class Brazil(
     val country: String = "",
     val cases: Int = 0,
     val confirmed: Int = 0,

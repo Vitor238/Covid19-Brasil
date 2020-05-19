@@ -9,7 +9,7 @@
         android:layout_height="wrap_content">
 
         <ImageView
-            android:id="@+id/imagemEstado"
+            android:id="@+id/imageState"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_centerVertical="true"
@@ -18,52 +18,52 @@
             tools:srcCompat="@drawable/ic_launcher_background" />
 
         <TextView
-            android:id="@+id/textNomeEstado"
+            android:id="@+id/textStateName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/imagemEstado"
+            android:layout_below="@id/imageState"
             android:layout_alignParentTop="true"
             android:layout_marginTop="4dp"
-            android:layout_toEndOf="@id/imagemEstado"
+            android:layout_toEndOf="@id/imageState"
             android:fontFamily="@font/poppins_bold"
             android:textSize="12sp"
             tools:text="SP" />
 
         <TextView
-            android:id="@+id/textConfirmados"
+            android:id="@+id/textConfirmed"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textNomeEstado"
+            android:layout_below="@+id/textStateName"
             android:layout_marginTop="4dp"
-            android:layout_toEndOf="@id/imagemEstado"
+            android:layout_toEndOf="@id/imageState"
             android:text="@string/confirmed"
             android:textSize="12sp" />
 
         <TextView
-            android:id="@+id/textNumeroConfirmados"
+            android:id="@+id/textNumberConfirmed"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textNomeEstado"
+            android:layout_below="@+id/textStateName"
             android:layout_alignParentEnd="true"
             android:layout_margin="4dp"
             android:textSize="12sp"
             tools:text="0" />
 
         <TextView
-            android:id="@+id/textMortes"
+            android:id="@+id/textDeaths"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textConfirmados"
+            android:layout_below="@+id/textConfirmed"
             android:layout_marginTop="4dp"
-            android:layout_toEndOf="@id/imagemEstado"
+            android:layout_toEndOf="@id/imageState"
             android:text="@string/deaths"
             android:textSize="12sp" />
 
         <TextView
-            android:id="@+id/textNumeroMortes"
+            android:id="@+id/textNumberDeaths"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textConfirmados"
+            android:layout_below="@+id/textConfirmed"
             android:layout_alignParentEnd="true"
             android:layout_margin="4dp"
             android:textSize="12sp"

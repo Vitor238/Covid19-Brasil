@@ -1,17 +1,66 @@
 <resources>
     <string name="app_name">Covid19 Brazil</string>
     <string name="brazil">Brazil</string>
+    <string name="cases">Cases</string>
     <string name="symptoms">Symptoms</string>
+    <string name="care">Care</string>
+    <string name="transmission">Transmission</string>
+    <string name="prevention">Prevention</string>
     <string name="covid_description">Coronavirus disease 2019 (COVID-19) is an infectious disease caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2).</string>
+    <string name="symptoms_description">The symptoms of COVID-19 can range from a simple flu to severe pneumonia.</string>
+    <string name="prevention_description">Knowing how to prevent COVID 19 and how it is transmitted is an important tool in combating the disease. See how:</string>
+    <string name="symptomps_list">
+        \u2022 Cough \n
+        \u2022 Fever \n
+        \u2022 Coryza \n
+        \u2022 Sore throat \n
+        \u2022 Difficulty breathing
+    </string>
+    <string name="transmission_list">
+        The transmission occurs from one sick person to another or through close contact through: \n
+        \n
+        \u2022 Handshake \n
+        \u2022 Spit droplets \n
+        \u2022 Sneeze \n
+        \u2022 Cough \n
+        \u2022 Phlegm \n
+        \u2022 Contaminated objects or surfaces, such as cell phones, tables, door handles, toys, computer keyboards, etc.
+    </string>
+    <string name="prevention_list">
+        The prevention recommendations for COVID-19 are as follows: \n
+        \n
+        \u2022 Wash your hands frequently up to the wrists, with soap and water, or sanitized with 70% gel alcohol. \n
+        \u2022 When coughing or sneezing, cover your nose and mouth with a handkerchief or your arm, not your hands. \n
+        \u2022 Avoid touching eyes, nose and mouth with unwashed hands. \n
+        \u2022 When touching, always wash your hands as indicated. \n
+        \u2022 Keep a minimum distance of about 2 meters from anyone coughing or sneezing. \n
+        \u2022 Avoid hugs, kisses and handshakes. Adopt friendly behavior without physical contact, but always with a smile on your face. \n
+        \u2022 Frequently sanitize children\'s cell phones and toys. \n
+        \u2022 Do not share personal items, such as cutlery, towels, plates and glasses. \n
+        \u2022 Keep environments clean and well ventilated. \n
+        \u2022 Avoid unnecessary circulation in the streets, stadiums, theaters, shopping malls, concerts, cinemas and churches. If you can, stay home. \n
+        \u2022 If you are sick, avoid physical contact with other people, especially the elderly and the chronically ill, and stay at home until you get better. \n
+        \u2022 Sleep well and eat healthy. \n
+        \u2022 Use homemade or handmade masks made of fabric when leaving your home. \n
+    </string>
+    <string name="useful_links">Useful links</string>
     <string name="confirmed">Confirmed</string>
     <string name="active">Active</string>
     <string name="recovered">Recovered</string>
     <string name="deaths">Deaths</string>
     <string name="states">States</string>
-    <string name="more_info">For more information visit the website of the Ministry of Health of Brazil</string>
+    <string name="ministry_of_health">Ministry of Health of Brazil</string>
     <string name="fever">Fever</string>
     <string name="shortness_of_breath">Shortness of Breath</string>
     <string name="cough">Cough</string>
+    <string name="coryza">Coryza</string>
+    <string name="sore_throat">Sore throat</string>
     <string name="updatedAt">Updated at</string>
     <string name="error">Error</string>
+    <string name="atila">Atila Iamarino - Biologist</string>
+    <string name="link_title_1">Learn the right way to wash your hands (Portuguese)</string>
+    <string name="link_title_2">How to protect yourself from COVID-19 (Portuguese)</string>
+    <string name="link_title_3">Learn how to make your cloth mask with needle and thread (Portuguese)</string>
+    <string name="link_title_4">How are the symptoms of COVID-19? (Portuguese)</string>
+    <string name="link_title_5">@string/ministry_of_health</string>
 </resources>

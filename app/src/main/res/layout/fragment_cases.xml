@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.BrasilFragment">
+    tools:context=".fragment.CasesFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -64,7 +64,7 @@
                     android:textSize="24sp" />
 
                 <TextView
-                    android:id="@+id/textConfirmados"
+                    android:id="@+id/textConfirmed"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/textBrasil"
@@ -73,7 +73,7 @@
                     android:text="@string/confirmed" />
 
                 <TextView
-                    android:id="@+id/textNumeroConfirmados"
+                    android:id="@+id/textNumberConfirmed"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/textBrasil"
@@ -85,7 +85,7 @@
                     android:id="@+id/textAtivos"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/textConfirmados"
+                    android:layout_below="@id/textConfirmed"
                     android:layout_alignParentStart="true"
                     android:layout_margin="4dp"
                     android:text="@string/active" />
@@ -94,7 +94,7 @@
                     android:id="@+id/textNumeroAtivos"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/textConfirmados"
+                    android:layout_below="@id/textConfirmed"
                     android:layout_alignParentEnd="true"
                     android:layout_margin="4dp"
                     tools:text="0"/>
@@ -118,7 +118,7 @@
                     tools:text="0" />
 
                 <TextView
-                    android:id="@+id/textMortes"
+                    android:id="@+id/textDeaths"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/textRecuperados"
@@ -127,7 +127,7 @@
                     android:text="@string/deaths" />
 
                 <TextView
-                    android:id="@+id/textNumeroMortes"
+                    android:id="@+id/textNumberDeaths"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/textRecuperados"
@@ -139,7 +139,7 @@
                     android:id="@+id/textAtualizadoEm"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/textMortes"
+                    android:layout_below="@id/textNumberDeaths"
                     android:layout_alignParentStart="true"
                     android:layout_margin="4dp"
                     android:text="@string/updatedAt" />
@@ -148,7 +148,7 @@
                     android:id="@+id/textDataAualizacao"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/textMortes"
+                    android:layout_below="@id/textNumberDeaths"
                     android:layout_alignParentEnd="true"
                     android:layout_margin="4dp"
                     tools:text="0" />
@@ -180,7 +180,7 @@
                     android:id="@+id/recyclerViewEstados"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    tools:listitem="@layout/item_estados"/>
+                    tools:listitem="@layout/item_state"/>
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>

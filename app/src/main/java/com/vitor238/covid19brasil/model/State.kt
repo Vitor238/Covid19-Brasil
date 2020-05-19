@@ -10,6 +10,16 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 For support, please feel free to contact me at https://www.linkedin.com/in/syedabsar */
 
 
-data class ListaEstados (
-	val data : List<Estado>
+data class State (
+
+	val uid : Int,
+	val uf : String,
+	val state : String,
+	val cases : Int,
+	val deaths : Int,
+	val suspects : Int,
+	val refuses : Int,
+	val broadcast : Boolean,
+	val comments : String,
+	val datetime : String
 )

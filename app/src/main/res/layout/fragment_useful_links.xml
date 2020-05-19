@@ -3,14 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.SintomasFragment">
+    tools:context=".fragment.UsefulLinksFragment">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerViewSintomas"
+        android:id="@+id/recyclerViewLinks"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:listitem="@layout/item_sintomas">
-
-    </androidx.recyclerview.widget.RecyclerView>
+        tools:listitem="@layout/item_links"/>
 
 </FrameLayout>

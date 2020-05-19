@@ -1,18 +1,67 @@
 <resources>
     <string name="app_name">Covid19 Brasil</string>
     <string name="brazil">Brasil</string>
+    <string name="cases">Casos</string>
     <string name="symptoms">Sintomas</string>
+    <string name="care">Cuidados</string>
+    <string name="transmission">Transmissão</string>
+    <string name="prevention">Prevenção</string>
     <string name="fever">Febre</string>
     <string name="covid_description">COVID-19 (do inglês Coronavirus Disease 2019) é uma doença infeciosa causada pelo coronavírus da síndrome respiratória aguda grave 2 (SARS-CoV-2).</string>
+    <string name="symptoms_description">Os sintomas da COVID-19 podem variar de um simples resfriado até uma pneumonia severa.</string>
+    <string name="prevention_description">Saber como prevenir a COVID 19 e como ela é transmitida é uma ferramenta importante no combate à doença. Veja como:</string>
+    <string name="symptomps_list">
+        \u2022 Tosse \n
+        \u2022 Febre \n
+        \u2022 Coriza \n
+        \u2022 Dor de garganta\n
+        \u2022 Dificuldade para respirar
+    </string>
+    <string name="transmission_list">
+        A transmissão acontece de uma pessoa doente para outra ou por contato próximo por meio de: \n
+        \n
+        \u2022 Toque do aperto de mão \n
+        \u2022 Gotículas de saliva \n
+        \u2022 Espirro \n
+        \u2022 Tosse \n
+        \u2022 Catarro \n
+        \u2022 Objetos ou superfícies contaminadas, como celulares, mesas, maçanetas, brinquedos, teclados de computador etc.
+    </string>
+    <string name="prevention_list">
+        As recomendações de prevenção à COVID-19 são as seguintes: \n
+        \n
+        \u2022 Lave com frequência as mãos até a altura dos punhos, com água e sabão, ou então higienize com álcool em gel 70%. \n
+        \u2022 Ao tossir ou espirrar, cubra nariz e boca com lenço ou com o braço, e não com as mãos. \n
+        \u2022 Evite tocar olhos, nariz e boca com as mãos não lavadas. \n
+        \u2022 Ao tocar, lave sempre as mãos como já indicado. \n
+        \u2022 Mantenha uma distância mínima de cerca de 2 metros de qualquer pessoa tossindo ou espirrando. \n
+        \u2022 Evite abraços, beijos e apertos de mãos. Adote um comportamento amigável sem contato físico, mas sempre com um sorriso no rosto. \n
+        \u2022 Higienize com frequência o celular e os brinquedos das crianças. \n
+        \u2022 Não compartilhe objetos de uso pessoal, como talheres, toalhas, pratos e copos. \n
+        \u2022 Mantenha os ambientes limpos e bem ventilados. \n
+        \u2022 Evite circulação desnecessária nas ruas, estádios, teatros, shoppings, shows, cinemas e igrejas. Se puder, fique em casa. \n
+        \u2022 Se estiver doente, evite contato físico com outras pessoas, principalmente idosos e doentes crônicos, e fique em casa até melhorar. \n
+        \u2022 Durma bem e tenha uma alimentação saudável. \n
+        \u2022 Utilize máscaras caseiras ou artesanais feitas de tecido em situações de saída de sua residência. \n
+    </string>
+    <string name="useful_links">Links úteis</string>
     <string name="confirmed">Confirmados</string>
     <string name="active">Ativos</string>
     <string name="recovered">Recuperados</string>
     <string name="deaths">Mortes</string>
     <string name="states">Estados</string>
-    <string name="more_info">Para mais infomações acesse o site do Ministério da Saúde</string>
+    <string name="ministry_of_health">Ministério da Saúde</string>
     <string name="shortness_of_breath">Falta de Ar</string>
     <string name="cough">Tosse</string>
+    <string name="coryza">Coriza</string>
+    <string name="sore_throat">Dor de garganta</string>
     <string name="updatedAt">Atualizado em</string>
     <string name="error">Erro</string>
+    <string name="atila">Atila Iamarino - Biólogo</string>
+    <string name="link_title_1">Aprenda a maneira correta de lavar as mãos</string>
+    <string name="link_title_2">"Como se proteger da COVID-19</string>
+    <string name="link_title_3">Aprenda a fazer sua máscara de pano com agulha e linha</string>
+    <string name="link_title_4">Como são os sintomas da COVID-19?</string>
+    <string name="link_title_5">@string/ministry_of_health</string>
 
 </resources>
