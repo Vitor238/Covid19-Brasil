@@ -4,14 +4,10 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.bumptech.glide.load.MultiTransformation
-import com.bumptech.glide.load.resource.bitmap.CenterCrop
-import com.bumptech.glide.load.resource.bitmap.RoundedCorners
-import com.bumptech.glide.request.RequestOptions
+import com.makeramen.roundedimageview.RoundedImageView
 import com.vitor238.covid19brasil.R
 import com.vitor238.covid19brasil.model.UsefulLink
 
@@ -39,7 +35,7 @@ class AdapterLinks(val context: Context,
     }
 
     inner class ViewHolder(item: View) : RecyclerView.ViewHolder(item){
-        val imageThumbnail: ImageView = item.findViewById(R.id.imageThumbnail)
+        val imageThumbnail: RoundedImageView = item.findViewById(R.id.imageThumbnail)
         val textTitle: TextView = item.findViewById(R.id.textTitle)
         val textAuthor: TextView = item.findViewById(R.id.textAuthor)
 

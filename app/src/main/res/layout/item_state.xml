@@ -2,20 +2,24 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_height="wrap_content">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <ImageView
+        <com.makeramen.roundedimageview.RoundedImageView
             android:id="@+id/imageState"
-            android:layout_width="30dp"
+            android:layout_width="45dp"
             android:layout_height="30dp"
             android:layout_centerVertical="true"
             android:scaleType="centerCrop"
             android:layout_marginEnd="16dp"
-            tools:srcCompat="@drawable/ic_launcher_background" />
+            app:riv_border_color="@android:color/darker_gray"
+            app:riv_border_width="1dp"
+            app:riv_corner_radius="4dp"
+            tools:src="@drawable/ic_launcher_background" />
 
         <TextView
             android:id="@+id/textStateName"
@@ -23,7 +27,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/imageState"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="4dp"
+            android:layout_marginTop="@dimen/top_margin"
             android:layout_toEndOf="@id/imageState"
             android:fontFamily="@font/poppins_bold"
             android:textSize="12sp"
@@ -34,7 +38,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/textStateName"
-            android:layout_marginTop="4dp"
+            android:layout_marginTop="@dimen/top_margin"
             android:layout_toEndOf="@id/imageState"
             android:text="@string/confirmed"
             android:textSize="12sp" />
@@ -45,7 +49,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/textStateName"
             android:layout_alignParentEnd="true"
-            android:layout_margin="4dp"
+            android:layout_margin="@dimen/top_margin"
             android:textSize="12sp"
             tools:text="0" />
 
@@ -54,7 +58,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/textConfirmed"
-            android:layout_marginTop="4dp"
+            android:layout_marginTop="@dimen/top_margin"
             android:layout_toEndOf="@id/imageState"
             android:text="@string/deaths"
             android:textSize="12sp" />
@@ -65,7 +69,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/textConfirmed"
             android:layout_alignParentEnd="true"
-            android:layout_margin="4dp"
+            android:layout_margin="@dimen/top_margin"
             android:textSize="12sp"
             tools:text="0" />
     </RelativeLayout>

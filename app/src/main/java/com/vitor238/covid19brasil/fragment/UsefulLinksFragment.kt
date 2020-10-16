@@ -74,7 +74,6 @@ class UsefulLinksFragment : Fragment(),AdapterLinks.OnLinkClickListener {
             )
 
             fragmentView.recyclerViewLinks.layoutManager = LinearLayoutManager(fragmentActivity)
-            fragmentView.recyclerViewLinks.setHasFixedSize(true)
             fragmentView.recyclerViewLinks.adapter =
                 AdapterLinks(fragmentActivity, listLinks,this)
         }
