@@ -18,10 +18,10 @@ import kotlinx.android.synthetic.main.fragment_useful_links.view.*
  * A simple [Fragment] subclass.
  */
 
-class UsefulLinksFragment : Fragment(),AdapterLinks.OnLinkClickListener {
+class UsefulLinksFragment : Fragment(), AdapterLinks.OnLinkClickListener {
 
     private lateinit var fragmentView: View
-    private lateinit var listLinks:List<UsefulLink>
+    private lateinit var listLinks: List<UsefulLink>
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -36,46 +36,64 @@ class UsefulLinksFragment : Fragment(),AdapterLinks.OnLinkClickListener {
 
     private fun setupRecyclerView() {
         activity?.let { fragmentActivity ->
-           listLinks = listOf(
+            listLinks = listOf(
                 UsefulLink(
                     getString(R.string.link_title_1),
                     getString(R.string.ministry_of_health),
-                    "https://img.youtube.com/vi/2h8vc-voPNQ/mqdefault.jpg",
+                    R.drawable.link_1,
                     "https://youtu.be/2h8vc-voPNQ"
                 ),
 
                 UsefulLink(
                     getString(R.string.link_title_2),
                     getString(R.string.atila),
-                    "https://img.youtube.com/vi/KOXNBA9b86I/mqdefault.jpg",
+                    R.drawable.link_2,
                     "https://youtu.be/KOXNBA9b86I"
                 ),
 
                 UsefulLink(
                     getString(R.string.link_title_3),
                     getString(R.string.ministry_of_health),
-                    "https://img.youtube.com/vi/FJxNsQ1-ZGM/mqdefault.jpg",
+                    R.drawable.link_3,
                     "https://youtu.be/FJxNsQ1-ZGM"
                 ),
 
                 UsefulLink(
                     getString(R.string.link_title_4),
                     getString(R.string.atila),
-                    "https://img.youtube.com/vi/X_HC8aCrHdA/mqdefault.jpg",
+                    R.drawable.link_4,
                     "https://youtu.be/X_HC8aCrHdA"
                 ),
 
                 UsefulLink(
                     getString(R.string.link_title_5),
                     "",
-                    "https://yt3.ggpht.com/a/AATXAJxaG8deGjN0sIUSy16BRmtsCcmrmvKYeJCuxw=s176-c-k-c0x00ffffff-no-rj-mo",
+                    R.drawable.link_5,
                     "https://coronavirus.saude.gov.br"
+                ),
+                UsefulLink(
+                    getString(R.string.link_title_6),
+                    "",
+                    R.drawable.link_6,
+                    "https://www.who.int/emergencies/diseases/novel-coronavirus-2019"
+                ),
+                UsefulLink(
+                    getString(R.string.link_title_7),
+                    getString(R.string.atila),
+                    R.drawable.link_7,
+                    "https://youtu.be/llLB1nwH1FE"
+                ),
+                UsefulLink(
+                    getString(R.string.link_title_8),
+                    getString(R.string.bbc),
+                    R.drawable.link_8,
+                    "https://www.bbc.com/portuguese/internacional-54014416"
                 )
             )
 
             fragmentView.recyclerViewLinks.layoutManager = LinearLayoutManager(fragmentActivity)
             fragmentView.recyclerViewLinks.adapter =
-                AdapterLinks(fragmentActivity, listLinks,this)
+                AdapterLinks(fragmentActivity, listLinks, this)
         }
     }
 

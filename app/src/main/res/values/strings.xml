@@ -90,10 +90,14 @@
     <string name="updatedAt">Atualizado em</string>
     <string name="error">Erro</string>
     <string name="atila">Atila Iamarino - Biólogo</string>
+    <string name="bbc">BBC Brasil</string>
     <string name="link_title_1">Aprenda a maneira correta de lavar as mãos</string>
     <string name="link_title_2">"Como se proteger da COVID-19</string>
     <string name="link_title_3">Aprenda a fazer sua máscara de pano com agulha e linha</string>
     <string name="link_title_4">Como são os sintomas da COVID-19?</string>
     <string name="link_title_5">@string/ministry_of_health</string>
+    <string name="link_title_6">Organização Mundial da Saúde - COVID-19 (Inglês)</string>
+    <string name="link_title_7">Qual o Futuro do Coronavírus e da COVID-19?</string>
+    <string name="link_title_8">Covid-19: qual o risco de contágio que cada atividade oferece?</string>
 
 </resources>

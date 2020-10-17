@@ -90,9 +90,13 @@
     <string name="updatedAt">Updated at</string>
     <string name="error">Error</string>
     <string name="atila">Atila Iamarino - Biologist</string>
+    <string name="bbc">BBC Brazil</string>
     <string name="link_title_1">Learn the right way to wash your hands (Portuguese)</string>
     <string name="link_title_2">How to protect yourself from COVID-19 (Portuguese)</string>
     <string name="link_title_3">Learn how to make your cloth mask with needle and thread (Portuguese)</string>
     <string name="link_title_4">How are the symptoms of COVID-19? (Portuguese)</string>
     <string name="link_title_5">@string/ministry_of_health</string>
+    <string name="link_title_6">World Health Organization - COVID-19</string>
+    <string name="link_title_7">What is the Future of Coronavirus and COVID-19?  (Portuguese)</string>
+    <string name="link_title_8">Covid-19: what is the risk of contagion that each activity offers? (Portuguese)</string>
 </resources>
