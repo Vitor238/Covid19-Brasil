@@ -10,12 +10,44 @@
     <string name="covid_description">COVID-19 (do inglês Coronavirus Disease 2019) é uma doença infeciosa causada pelo coronavírus da síndrome respiratória aguda grave 2 (SARS-CoV-2).</string>
     <string name="symptoms_description">Os sintomas da COVID-19 podem variar de um simples resfriado até uma pneumonia severa.</string>
     <string name="prevention_description">Saber como prevenir a COVID 19 e como ela é transmitida é uma ferramenta importante no combate à doença. Veja como:</string>
-    <string name="symptomps_list">
-        \u2022 Tosse \n
+    <string name="symptoms_info">
+        Os sintomas mais comuns de COVID-19 são \n
+        \n
         \u2022 Febre \n
-        \u2022 Coriza \n
-        \u2022 Dor de garganta\n
-        \u2022 Dificuldade para respirar
+        \u2022 Tosse seca \n
+        \u2022 Fadiga \n
+        \n
+        Outros sintomas que são menos comuns e podem afetar alguns pacientes incluem: \n
+        \n
+        \u2022 Perda de paladar ou cheiro, \n
+        \u2022 Congestão nasal, \n
+        \u2022 Conjuntivite (também conhecida como olhos vermelhos) \n
+        \u2022 Dor de garganta, \n
+        \u2022 Dor de cabeça, \n
+        \u2022 Dores musculares ou articulares, \n
+        \u2022 Diferentes tipos de erupção cutânea, \n
+        \u2022 Náusea ou vômito, \n
+        \u2022 Diarreia, \n
+        \u2022 Calafrios ou tonturas. \n
+        \n
+        Os sintomas geralmente são leves. Algumas pessoas ficam infectadas, mas apresentam apenas sintomas leves ou nenhum sintoma. \n
+        \n
+        Os sintomas de doença COVID ‐ 19 grave incluem: \n
+        \u2022 Falta de ar, \n
+        \u2022 Perda de apetite, \n
+        \u2022 Confusão, \n
+        \u2022 Dor ou pressão persistente no peito, \n
+        \u2022 Febre alta (acima de 38 ° C). \n
+        \n
+        Outros sintomas menos comuns são: \n
+        \n
+        \u2022 Irritabilidade, \n
+        \u2022 Confusão, \n
+        \u2022 Consciência reduzida (às vezes associada a convulsões), \n
+        \u2022 Ansiedade, \n
+        \u2022 Depressão, \n
+        \u2022 Distúrbios do sono, \n
+        \u2022 Complicações neurológicas mais graves e raras, como derrames, inflamação do cérebro, delírio e danos nos nervos. \n
     </string>
     <string name="transmission_list">
         A transmissão acontece de uma pessoa doente para outra ou por contato próximo por meio de: \n

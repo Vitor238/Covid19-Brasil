@@ -9,12 +9,44 @@
     <string name="covid_description">Coronavirus disease 2019 (COVID-19) is an infectious disease caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2).</string>
     <string name="symptoms_description">The symptoms of COVID-19 can range from a simple flu to severe pneumonia.</string>
     <string name="prevention_description">Knowing how to prevent COVID 19 and how it is transmitted is an important tool in combating the disease. See how:</string>
-    <string name="symptomps_list">
-        \u2022 Cough \n
+    <string name="symptoms_info">
+        The most common symptoms of COVID-19 are \n
+        \n
         \u2022 Fever \n
-        \u2022 Coryza \n
-        \u2022 Sore throat \n
-        \u2022 Difficulty breathing
+        \u2022 Dry cough \n
+        \u2022 Fatigue \n
+        \n
+        Other symptoms that are less common and may affect some patients include:  \n
+        \n
+        \u2022 Loss of taste or smell, \n
+        \u2022 Nasal congestion, \n
+        \u2022 Conjunctivitis (also known as red eyes) \n
+        \u2022 Sore throat, \n
+        \u2022 Headache, \n
+        \u2022 Muscle or joint pain, \n
+        \u2022 Different types of skin rash, \n
+        \u2022 Nausea or vomiting, \n
+        \u2022 Diarrhea, \n
+        \u2022 Chills or dizziness. \n
+        \n
+        Symptoms are usually mild. Some people become infected but only have very mild symptoms or none at all. \n
+        \n
+        Symptoms of severe COVID‐19 disease include: \n
+        \u2022 Shortness of breath, \n
+        \u2022 Loss of appetite, \n
+        \u2022 Confusion, \n
+        \u2022 Persistent pain or pressure in the chest, \n
+        \u2022 High temperature (above 38 °C). \n
+        \n
+        Other less common symptoms are: \n
+        \n
+        \u2022 Irritability, \n
+        \u2022 Confusion, \n
+        \u2022 Reduced consciousness (sometimes associated with seizures), \n
+        \u2022 Anxiety, \n
+        \u2022 Depression, \n
+        \u2022 Sleep disorders, \n
+        \u2022 More severe and rare neurological complications such as strokes, brain inflammation, delirium and nerve damage. \n
     </string>
     <string name="transmission_list">
         The transmission occurs from one sick person to another or through close contact through: \n
