@@ -99,4 +99,64 @@
     <string name="link_title_6">World Health Organization - COVID-19</string>
     <string name="link_title_7">What is the Future of Coronavirus and COVID-19?  (Portuguese)</string>
     <string name="link_title_8">Covid-19: what is the risk of contagion that each activity offers? (Portuguese)</string>
+    <string name="risk_1">1 Low Risk</string>
+    <string name="risk_2">2 Low Risk</string>
+    <string name="risk_3">3 Moderate-Low</string>
+    <string name="risk_4">4 Moderate-Low</string>
+    <string name="risk_5">5 Moderate Risk</string>
+    <string name="risk_6">6 Moderate Risk</string>
+    <string name="risk_7">7 Moderate-High</string>
+    <string name="risk_8">8 High Risk</string>
+    <string name="risk_9">9 High Risk</string>
+    <string name="risky_activity_list_1">\u2022 Opening the mail</string>
+    <string name="risky_activity_list_2">
+        \u2022 Getting restaurant takeout \n
+        \u2022 Pumping gasoline \n
+        \u2022 Playing tennis \n
+        \u2022 Going camping \n
+    </string>
+    <string name="risky_activity_list_3">
+        \u2022 Grocery shopping \n
+        \u2022 Going for a walk,run, or bike ride \n
+        \u2022 Playing gold \n
+    </string>
+    <string name="risky_activity_list_4">
+        \u2022 Staying at a hotel for two nights \n
+        \u2022 Sitting in a doctors waiting room \n
+        \u2022 Going to a library or museum \n
+        \u2022 Eating in a restaurant (outside) \n
+        \u2022 Walking in a busy downtown \n
+        \u2022 Spending an hour at a playground \n
+    </string>
+    <string name="risky_activity_list_5">
+        \u2022 Having a dinner at someone elses house \n
+        \u2022 Attending a backyard babecue \n
+        \u2022 Going to a beach or a mall \n
+    </string>
+    <string name="risky_activity_list_6">
+        \u2022 Sending kids to school,camp, or day care \n
+        \u2022 Working a week in an office building \n
+        \u2022 Swimming in a public pool \n
+        \u2022 Visiting an elderly relative or friend in their home \n
+    </string>
+    <string name="risky_activity_list_7">
+        \u2022 Going to a hair salon or barbershop \n
+        \u2022 Eating in a restaurant (inside) \n
+        \u2022 Attending a wedding or funneral \n
+        \u2022 Traveling by plane \n
+        \u2022 Playing basketball \n
+        \u2022 Hugging or shaking hands when greeting a friend \n
+    </string>
+    <string name="risky_activity_list_8">
+        \u2022 Eating at a buffet \n
+        \u2022 Working out at a gym \n
+        \u2022 Going to an amusement park or a movie theater \n
+    </string>
+    <string name="risky_activity_list_9">
+        \u2022 Attending a large music concert or a sports stadium \n
+        \u2022 Attending a religious service with 500+ worshippers \n
+        \u2022 Going to a bar \n
+    </string>
+    <string name="risky_activities_description">This ranking of risky activities was developed by a medical group from the Texas Medical Association Infectious Diseases Committee (TMA). For all activities on the list, doctors assumed that participants would be wearing masks, keeping a distance of at least two meters from unfamiliar people and washing their hands whenever possible</string>
+    <string name="risky_activities">Risk activities</string>
 </resources>

@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">@android:color/white</color>
-    <color name="colorPrimaryDark">@android:color/darker_gray</color>
+    <color name="colorPrimary">@color/white</color>
+    <color name="colorPrimaryDark">@color/darker_grey</color>
     <color name="colorAccent">#4CAF50</color>
+    <color name="risk_1">#EFF1CE</color>
+    <color name="risk_2">#CBDBA5</color>
+    <color name="risk_3">#A5C479</color>
+    <color name="risk_4">#7C9E38</color>
+    <color name="risk_5">#FFDC8C</color>
+    <color name="risk_6">#F1BB3A</color>
+    <color name="risk_7">#F27354</color>
+    <color name="risk_8">#C11F1F</color>
+    <color name="risk_9">#6F2020</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="darker_grey">#AAA</color>
 </resources>

@@ -13,6 +13,10 @@
         android:icon="@drawable/ic_faucet"
         android:title="@string/care" />
     <item
+        android:id="@+id/navigation_risky_activities"
+        android:icon="@drawable/ic_risky_activities"
+        android:title="@string/risky_activities" />
+    <item
         android:id="@+id/navigation_useful_links"
         android:icon="@drawable/ic_mask"
         android:title="@string/useful_links" />

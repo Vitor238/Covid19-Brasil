@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Covid19 Brasil</string>
     <string name="brazil">Brasil</string>
     <string name="cases">Casos</string>
@@ -99,5 +99,64 @@
     <string name="link_title_6">Organização Mundial da Saúde - COVID-19 (Inglês)</string>
     <string name="link_title_7">Qual o Futuro do Coronavírus e da COVID-19?</string>
     <string name="link_title_8">Covid-19: qual o risco de contágio que cada atividade oferece?</string>
-
+    <string name="risk_1">1 Baixo</string>
+    <string name="risk_2">2 Baixo</string>
+    <string name="risk_3">3 Baixo Moderado</string>
+    <string name="risk_4">4 Baixo Moderado</string>
+    <string name="risk_5">5 Moderado</string>
+    <string name="risk_6">6 Moderado</string>
+    <string name="risk_7">7 Moderado Alto</string>
+    <string name="risk_8">8 Alto</string>
+    <string name="risk_9">9 Alto</string>
+    <string name="risky_activity_list_1">\u2022 Abrir correspondência</string>
+    <string name="risky_activity_list_2">
+        \u2022 Comprar comida pra levar \n
+        \u2022 Abaster carro \n
+        \u2022 Jogar tênis \n
+        \u2022 Acampar \n
+        \u2022 Jogar gold \n
+    </string>
+    <string name="risky_activity_list_3">
+        \u2022 Ir ao supermercado \n
+        \u2022 Caminhar,correr ou andar de bicicleta com outras pessoas \n
+    </string>
+    <string name="risky_activity_list_4">
+        \u2022 Ficar hospedado em hotel por duas noites \n
+        \u2022 Esperar na recepção do consultório médico \n
+        \u2022 Ir à biblioteca ou ao museu \n
+        \u2022 Comer em restaurante(área externa) \n
+        \u2022 Caminhar pelo centro da cidade \n
+        \u2022 Passar uma hora em parque infantil \n
+    </string>
+    <string name="risky_activity_list_5">
+        \u2022 Jantar na casa de outra pessoa \n
+        \u2022 Ir a churrasco \n
+        \u2022 Ir à praia ou ao shopping \n
+    </string>
+    <string name="risky_activity_list_6" tools:ignore="Typos">
+        \u2022 Mandar as crianças à escola, ao acampamento ou à creche \n
+        \u2022 Trabalhar por uma semana em escritório \n
+        \u2022 Nadar em piscina pública \n
+        \u2022 Visitar idosos em casa \n
+    </string>
+    <string name="risky_activity_list_7">
+        \u2022 Ir a salão de beleza ou barbearia \n
+        \u2022 Comer em restaurante(área interna) \n
+        \u2022 Ir a casamento ou funeral \n
+        \u2022 Viajar de avião \n
+        \u2022 Jogar basquete \n
+        \u2022 Abraçar ou apertar a mão de alguém \n
+    </string>
+    <string name="risky_activity_list_8">
+        \u2022 Comer em bufê \n
+        \u2022 Ir à academia de ginástica \n
+        \u2022 Ir ao parque de diversões ou ao cinema \n
+    </string>
+    <string name="risky_activity_list_9">
+        \u2022 Ir a show grande ou evento esportivo em estádio \n
+        \u2022 Ir a culto religioso com 500 ou mais fiéis \n
+        \u2022 Ir ao bar \n
+    </string>
+    <string name="risky_activities_description">Esta classificação de atividades de risco foi elaborada por um grupo médicos do Comitê de Doenças Infecciosas da Associação Médica do Texas (TMA). Para todas as atividades da lista, os médicos assumiram que os participantes estariam usando máscaras, mantendo uma distância de pelo menos dois metros de pessoas que não são familiares e lavando as mãos sempre que possível.</string>
+    <string name="risky_activities">Atividades de risco</string>
 </resources>
