@@ -1,4 +1,4 @@
-# Covid19 Brasil
+<h1 align="center">Covid 19 Brasil</h1>
 
 
 <p align="center">
