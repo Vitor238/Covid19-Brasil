@@ -24,10 +24,10 @@
                 android:padding="16dp">
 
                 <ImageView
-                    android:id="@+id/imageView"
+                    android:contentDescription="@string/care"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
-                    android:src="@drawable/lave_as_maos" />
+                    android:src="@drawable/wash_the_hands" />
 
                 <TextView
                     android:layout_width="match_parent"

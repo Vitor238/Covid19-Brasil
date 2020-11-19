@@ -25,11 +25,11 @@
                 android:padding="16dp">
 
                 <ImageView
-                    android:contentDescription="@null"
+                    android:contentDescription="@string/symptoms"
                     android:id="@+id/imageView"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
-                    android:src="@drawable/febre" />
+                    android:src="@drawable/fever" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -53,7 +53,6 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/textTitulo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="4dp"

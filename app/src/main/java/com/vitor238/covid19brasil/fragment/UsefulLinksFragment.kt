@@ -7,7 +7,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.recyclerview.widget.LinearLayoutManager
 import com.vitor238.covid19brasil.R
 import com.vitor238.covid19brasil.adapter.AdapterLinks
 import com.vitor238.covid19brasil.model.UsefulLink
@@ -18,10 +17,10 @@ import kotlinx.android.synthetic.main.fragment_useful_links.view.*
  * A simple [Fragment] subclass.
  */
 
-class UsefulLinksFragment : Fragment(), AdapterLinks.OnLinkClickListener {
+class UsefulLinksFragment : Fragment(){
 
     private lateinit var fragmentView: View
-    private lateinit var listLinks: List<UsefulLink>
+    private lateinit var adapterLinks: AdapterLinks
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -30,13 +29,17 @@ class UsefulLinksFragment : Fragment(), AdapterLinks.OnLinkClickListener {
 
         // Inflate the layout for this fragment
         fragmentView = inflater.inflate(R.layout.fragment_useful_links, container, false)
+
+        adapterLinks = AdapterLinks {
+            val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(it.link))
+            startActivity(browserIntent)
+        }
         setupRecyclerView()
         return fragmentView
     }
 
     private fun setupRecyclerView() {
-        activity?.let { fragmentActivity ->
-            listLinks = listOf(
+            val linksList = listOf(
                 UsefulLink(
                     getString(R.string.link_title_1),
                     getString(R.string.ministry_of_health),
@@ -90,15 +93,11 @@ class UsefulLinksFragment : Fragment(), AdapterLinks.OnLinkClickListener {
                     "https://www.bbc.com/portuguese/internacional-54014416"
                 )
             )
-
-            fragmentView.recyclerViewLinks.layoutManager = LinearLayoutManager(fragmentActivity)
-            fragmentView.recyclerViewLinks.adapter =
-                AdapterLinks(fragmentActivity, listLinks, this)
-        }
+        fragmentView.recycler_links.adapter = adapterLinks
+        adapterLinks.submitList(linksList)
     }
 
-    override fun onLinkClick(usefulLink: UsefulLink) {
-        val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse(usefulLink.link))
-        startActivity(browserIntent)
+    companion object {
+        fun newInstance() = UsefulLinksFragment()
     }
 }

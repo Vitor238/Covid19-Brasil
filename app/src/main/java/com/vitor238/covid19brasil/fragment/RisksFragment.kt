@@ -25,12 +25,7 @@ class RisksFragment : Fragment() {
         return fragmentView
     }
 
-    companion object {
-        fun newInstance() = RisksFragment()
-    }
-
     private fun setupRecyclerView() {
-
         val riskyActivitiesList = listOf(
             RiskyActivity(
                 getString(R.string.risk_1),
@@ -90,7 +85,12 @@ class RisksFragment : Fragment() {
 
         val adapter = RiskyActivitiesAdapter()
         fragmentView.risky_activities_recyclerview.adapter = adapter
-        adapter.setListData(riskyActivitiesList)
+        adapter.submitList(riskyActivitiesList)
 
     }
+
+    companion object {
+        fun newInstance() = RisksFragment()
+    }
+
 }

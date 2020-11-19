@@ -10,14 +10,15 @@
     android:layout_marginBottom="4dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/relativeLayout"
+        android:id="@+id/constraint_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="16dp">
 
         <com.makeramen.roundedimageview.RoundedImageView
-            android:id="@+id/imageThumbnail"
+            android:id="@+id/image_thumbnail"
             android:layout_width="0dp"
+            android:contentDescription="@null"
             android:layout_height="0dp"
             android:scaleType="centerCrop"
             app:layout_constraintTop_toTopOf="parent"
@@ -28,23 +29,23 @@
             tools:src="@drawable/ic_launcher_background" />
 
         <TextView
-            android:id="@+id/textTitle"
+            android:id="@+id/text_title"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_bold"
             android:layout_marginTop="4dp"
-            app:layout_constraintTop_toBottomOf="@+id/imageThumbnail"
+            app:layout_constraintTop_toBottomOf="@+id/image_thumbnail"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             tools:text="Hello world" />
 
         <TextView
-            android:id="@+id/textAuthor"
+            android:id="@+id/text_author"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintEnd_toEndOf="parent"
             android:textSize="12sp"
-            app:layout_constraintTop_toBottomOf="@+id/textTitle"
+            app:layout_constraintTop_toBottomOf="@+id/text_title"
             app:layout_constraintStart_toStartOf="parent"
             tools:text="Hello world" />
     </androidx.constraintlayout.widget.ConstraintLayout>

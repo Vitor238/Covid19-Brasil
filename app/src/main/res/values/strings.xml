@@ -6,7 +6,6 @@
     <string name="care">Cuidados</string>
     <string name="transmission">Transmissão</string>
     <string name="prevention">Prevenção</string>
-    <string name="fever">Febre</string>
     <string name="covid_description">COVID-19 (do inglês Coronavirus Disease 2019) é uma doença infeciosa causada pelo coronavírus da síndrome respiratória aguda grave 2 (SARS-CoV-2).</string>
     <string name="symptoms_description">Os sintomas da COVID-19 podem variar de um simples resfriado até uma pneumonia severa.</string>
     <string name="prevention_description">Saber como prevenir a COVID 19 e como ela é transmitida é uma ferramenta importante no combate à doença. Veja como:</string>
@@ -83,10 +82,6 @@
     <string name="deaths">Mortes</string>
     <string name="states">Estados</string>
     <string name="ministry_of_health">Ministério da Saúde</string>
-    <string name="shortness_of_breath">Falta de Ar</string>
-    <string name="cough">Tosse</string>
-    <string name="coryza">Coriza</string>
-    <string name="sore_throat">Dor de garganta</string>
     <string name="updatedAt">Atualizado em</string>
     <string name="error">Erro</string>
     <string name="atila">Atila Iamarino - Biólogo</string>

@@ -5,29 +5,23 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.cardview.widget.CardView
+import androidx.recyclerview.widget.DiffUtil
+import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.vitor238.covid19brasil.R
 import com.vitor238.covid19brasil.model.RiskyActivity
+import com.vitor238.covid19brasil.model.UsefulLink
 import kotlinx.android.synthetic.main.item_risk.view.*
 
-class RiskyActivitiesAdapter : RecyclerView.Adapter<RiskyActivitiesAdapter.ViewHolder>() {
-
-    private var riskyActivitiesList = listOf<RiskyActivity>()
-
-    fun setListData(data: List<RiskyActivity>) {
-        riskyActivitiesList = data
-    }
+class RiskyActivitiesAdapter :
+    ListAdapter<RiskyActivity,RiskyActivitiesAdapter.ViewHolder>(RiskyActivitiesDiffUtils()) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder.from(parent)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.bind(riskyActivitiesList[position])
-    }
-
-    override fun getItemCount(): Int {
-        return riskyActivitiesList.size
+        holder.bind(getItem(position))
     }
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -50,6 +44,17 @@ class RiskyActivitiesAdapter : RecyclerView.Adapter<RiskyActivitiesAdapter.ViewH
                 val view = layoutInflater.inflate(R.layout.item_risk, parent, false)
                 return ViewHolder(view)
             }
+        }
+    }
+
+    class RiskyActivitiesDiffUtils: DiffUtil.ItemCallback<RiskyActivity>(){
+
+        override fun areItemsTheSame(oldItem: RiskyActivity, newItem: RiskyActivity): Boolean {
+           return oldItem.title == newItem.title
+        }
+
+        override fun areContentsTheSame(oldItem: RiskyActivity, newItem: RiskyActivity): Boolean {
+            return  oldItem == newItem
         }
     }
 }

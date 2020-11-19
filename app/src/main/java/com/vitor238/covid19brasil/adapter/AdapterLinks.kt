@@ -1,58 +1,64 @@
 package com.vitor238.covid19brasil.adapter
 
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.recyclerview.widget.DiffUtil
+import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.makeramen.roundedimageview.RoundedImageView
 import com.vitor238.covid19brasil.R
 import com.vitor238.covid19brasil.model.UsefulLink
+import kotlinx.android.synthetic.main.item_links.view.*
 
 
-class AdapterLinks(val context: Context,
-                   val listLinks: List<UsefulLink>,
-                   val onLinkClickListener: OnLinkClickListener) :
-    RecyclerView.Adapter<AdapterLinks.ViewHolder>() {
+class AdapterLinks(private val onClickListener:((usefulLink:UsefulLink) -> Unit)) :
+    ListAdapter<UsefulLink,AdapterLinks.ViewHolder>(LinksDiffUtils()){
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(
-            R.layout.item_links, parent,
-            false
-        )
-        return ViewHolder(view)
-    }
-
-    override fun getItemCount(): Int {
-        return listLinks.size
+        return ViewHolder.from(parent)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val link = listLinks[position]
-        holder.bind(link,onLinkClickListener)
+        holder.bind(getItem(position),onClickListener)
     }
 
-    inner class ViewHolder(item: View) : RecyclerView.ViewHolder(item){
-        val imageThumbnail: RoundedImageView = item.findViewById(R.id.imageThumbnail)
-        val textTitle: TextView = item.findViewById(R.id.textTitle)
-        val textAuthor: TextView = item.findViewById(R.id.textAuthor)
+    class ViewHolder(item: View) : RecyclerView.ViewHolder(item){
+        private val imageThumbnail: RoundedImageView = item.image_thumbnail
+        private val textTitle: TextView = item.text_title
+        private val textAuthor: TextView = item.text_author
 
-        fun bind(link:UsefulLink,onLinkClickListener: OnLinkClickListener){
+        fun bind(link:UsefulLink, onClickListener:((usefulLink:UsefulLink) -> Unit)){
             textAuthor.text = link.author
             textTitle.text = link.title
 
-            Glide.with(context).load(link.thumbnail).into(imageThumbnail)
+            Glide.with(imageThumbnail.context).load(link.thumbnail).into(imageThumbnail)
 
             itemView.setOnClickListener {
-                onLinkClickListener.onLinkClick(link)
+                onClickListener.invoke(link)
             }
-
+        }
+        
+        companion object{
+            fun from(parent: ViewGroup):ViewHolder{
+                val view = LayoutInflater.from(parent.context).inflate(
+                    R.layout.item_links, parent,
+                    false
+                )
+                return ViewHolder(view)
+            }
         }
     }
+    
+    class LinksDiffUtils: DiffUtil.ItemCallback<UsefulLink>(){
+        override fun areItemsTheSame(oldItem: UsefulLink, newItem: UsefulLink): Boolean {
+            return  oldItem.link == newItem.link
+        }
 
-    interface OnLinkClickListener{
-        fun onLinkClick(usefulLink: UsefulLink)
+        override fun areContentsTheSame(oldItem: UsefulLink, newItem: UsefulLink): Boolean {
+            return oldItem == newItem
+        }
     }
 }

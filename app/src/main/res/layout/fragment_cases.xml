@@ -25,17 +25,17 @@
                 android:padding="16dp">
 
                 <ImageView
-                    android:id="@+id/imageView"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
+                    android:contentDescription="@string/cases"
                     android:src="@drawable/home" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
                     android:text="@string/covid_description"
-                    android:textSize="12sp"
-                    android:layout_marginTop="16dp"/>
+                    android:textSize="12sp" />
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -53,7 +53,7 @@
                 android:padding="16dp">
 
                 <TextView
-                    android:id="@+id/textBrasil"
+                    android:id="@+id/text_brazil"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
@@ -64,91 +64,91 @@
                     android:textSize="24sp" />
 
                 <TextView
-                    android:id="@+id/textConfirmed"
+                    android:id="@+id/text_confirmed"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/textBrasil"
+                    android:layout_below="@id/text_brazil"
                     android:layout_alignParentStart="true"
                     android:layout_margin="4dp"
                     android:text="@string/confirmed" />
 
                 <TextView
-                    android:id="@+id/textNumberConfirmed"
+                    android:id="@+id/text_number_confirmed"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/textBrasil"
+                    android:layout_below="@id/text_brazil"
                     android:layout_alignParentEnd="true"
                     android:layout_margin="4dp"
-                    tools:text="0"/>
+                    tools:text="0" />
 
                 <TextView
-                    android:id="@+id/textAtivos"
+                    android:id="@+id/text_active"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/textConfirmed"
+                    android:layout_below="@id/text_confirmed"
                     android:layout_alignParentStart="true"
                     android:layout_margin="4dp"
                     android:text="@string/active" />
 
                 <TextView
-                    android:id="@+id/textNumeroAtivos"
+                    android:id="@+id/text_number_active"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/textConfirmed"
+                    android:layout_below="@id/text_confirmed"
                     android:layout_alignParentEnd="true"
                     android:layout_margin="4dp"
-                    tools:text="0"/>
+                    tools:text="0" />
 
                 <TextView
-                    android:id="@+id/textRecuperados"
+                    android:id="@+id/text_recovered"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/textAtivos"
+                    android:layout_below="@id/text_active"
                     android:layout_alignParentStart="true"
                     android:layout_margin="4dp"
                     android:text="@string/recovered" />
 
                 <TextView
-                    android:id="@+id/textNumeroRecuperados"
+                    android:id="@+id/text_recovered_number"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/textAtivos"
+                    android:layout_below="@id/text_active"
                     android:layout_alignParentEnd="true"
                     android:layout_margin="4dp"
                     tools:text="0" />
 
                 <TextView
-                    android:id="@+id/textDeaths"
+                    android:id="@+id/text_deaths"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/textRecuperados"
+                    android:layout_below="@id/text_recovered"
                     android:layout_alignParentStart="true"
                     android:layout_margin="4dp"
                     android:text="@string/deaths" />
 
                 <TextView
-                    android:id="@+id/textNumberDeaths"
+                    android:id="@+id/text_number_deaths"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/textRecuperados"
+                    android:layout_below="@id/text_recovered"
                     android:layout_alignParentEnd="true"
                     android:layout_margin="4dp"
                     tools:text="0" />
 
                 <TextView
-                    android:id="@+id/textAtualizadoEm"
+                    android:id="@+id/text_updated_on"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/textNumberDeaths"
+                    android:layout_below="@id/text_number_deaths"
                     android:layout_alignParentStart="true"
                     android:layout_margin="4dp"
                     android:text="@string/updatedAt" />
 
                 <TextView
-                    android:id="@+id/textDataAualizacao"
+                    android:id="@+id/text_update_date"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/textNumberDeaths"
+                    android:layout_below="@id/text_number_deaths"
                     android:layout_alignParentEnd="true"
                     android:layout_margin="4dp"
                     tools:text="0" />
@@ -168,6 +168,7 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:padding="16dp">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -177,10 +178,11 @@
                     android:textSize="24sp" />
 
                 <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/recyclerViewEstados"
+                    android:id="@+id/recycler_brazilian_states"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    tools:listitem="@layout/item_state"/>
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:listitem="@layout/item_brazilian_state" />
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>

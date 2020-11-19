@@ -82,11 +82,6 @@
     <string name="deaths">Deaths</string>
     <string name="states">States</string>
     <string name="ministry_of_health">Ministry of Health of Brazil</string>
-    <string name="fever">Fever</string>
-    <string name="shortness_of_breath">Shortness of Breath</string>
-    <string name="cough">Cough</string>
-    <string name="coryza">Coryza</string>
-    <string name="sore_throat">Sore throat</string>
     <string name="updatedAt">Updated at</string>
     <string name="error">Error</string>
     <string name="atila">Atila Iamarino - Biologist</string>

@@ -25,11 +25,11 @@
                 android:padding="16dp">
 
                 <ImageView
-                    android:contentDescription="@null"
+                    android:contentDescription="@string/risky_activities"
                     android:id="@+id/imageView"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
-                    android:src="@drawable/atividades" />
+                    android:src="@drawable/risky_activities" />
 
                 <TextView
                     android:layout_width="match_parent"

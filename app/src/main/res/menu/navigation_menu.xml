@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/navigation_cases"
+        android:id="@+id/action_cases"
         android:icon="@drawable/ic_brazil"
         android:title="@string/cases" />
     <item
-        android:id="@+id/navigation_symptoms"
+        android:id="@+id/action_symptoms"
         android:icon="@drawable/ic_lung"
         android:title="@string/symptoms" />
     <item
-        android:id="@+id/navigation_care"
+        android:id="@+id/action_care"
         android:icon="@drawable/ic_faucet"
         android:title="@string/care" />
     <item
-        android:id="@+id/navigation_risky_activities"
+        android:id="@+id/action_risky_activities"
         android:icon="@drawable/ic_risky_activities"
         android:title="@string/risky_activities" />
     <item
-        android:id="@+id/navigation_useful_links"
+        android:id="@+id/action_useful_links"
         android:icon="@drawable/ic_mask"
         android:title="@string/useful_links" />
 </menu>

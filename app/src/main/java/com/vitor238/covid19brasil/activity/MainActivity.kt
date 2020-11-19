@@ -16,27 +16,27 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        bottomNavigationView.setOnNavigationItemSelectedListener(this)
+        bottom_nav_main.setOnNavigationItemSelectedListener(this)
         openFragment(CasesFragment())
 
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
-            R.id.navigation_cases -> {
-                openFragment(CasesFragment())
+            R.id.action_cases -> {
+                openFragment(CasesFragment.newInstance())
             }
-            R.id.navigation_symptoms -> {
-                openFragment(SymptomsFragment())
+            R.id.action_symptoms -> {
+                openFragment(SymptomsFragment.newInstance())
             }
-            R.id.navigation_care -> {
-                openFragment(CareFragment())
+            R.id.action_care -> {
+                openFragment(CareFragment.newInstance())
             }
-            R.id.navigation_risky_activities -> {
+            R.id.action_risky_activities -> {
                 openFragment(RisksFragment.newInstance())
             }
-            R.id.navigation_useful_links -> {
-                openFragment(UsefulLinksFragment())
+            R.id.action_useful_links -> {
+                openFragment(UsefulLinksFragment.newInstance())
             }
         }
         return true

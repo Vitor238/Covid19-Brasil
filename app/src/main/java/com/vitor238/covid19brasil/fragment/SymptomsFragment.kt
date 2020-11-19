@@ -7,10 +7,6 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.vitor238.covid19brasil.R
 
-/**
- * A simple [Fragment] subclass.
- */
-
 class SymptomsFragment : Fragment() {
 
     override fun onCreateView(
@@ -20,5 +16,9 @@ class SymptomsFragment : Fragment() {
 
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_symptoms, container, false)
+    }
+
+    companion object {
+        fun newInstance() = SymptomsFragment()
     }
 }

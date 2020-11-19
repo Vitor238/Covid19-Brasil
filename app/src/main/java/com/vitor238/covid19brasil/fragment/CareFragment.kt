@@ -8,9 +8,6 @@ import android.view.ViewGroup
 
 import com.vitor238.covid19brasil.R
 
-/**
- * A simple [Fragment] subclass.
- */
 class CareFragment : Fragment() {
 
     override fun onCreateView(
@@ -21,4 +18,7 @@ class CareFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_care, container, false)
     }
 
+    companion object {
+        fun newInstance() = CareFragment()
+    }
 }

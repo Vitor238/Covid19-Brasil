@@ -6,31 +6,31 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.recyclerview.widget.LinearLayoutManager
 import com.vitor238.covid19brasil.R
-import com.vitor238.covid19brasil.adapter.AdapterStates
+import com.vitor238.covid19brasil.adapter.AdapterBrazilianStates
 import com.vitor238.covid19brasil.api.BrazilService
-import com.vitor238.covid19brasil.api.StatesService
+import com.vitor238.covid19brasil.api.BrazilianStatesService
 import com.vitor238.covid19brasil.extension.formatNumber
 import com.vitor238.covid19brasil.helper.RetrofitInitializer
 import com.vitor238.covid19brasil.model.Brazil
 import com.vitor238.covid19brasil.model.Country
-import com.vitor238.covid19brasil.model.ListStates
-import com.vitor238.covid19brasil.model.State
+import com.vitor238.covid19brasil.model.ListBrazilianStates
 import kotlinx.android.synthetic.main.fragment_cases.view.*
 import retrofit2.Call
 import retrofit2.Response
 import java.text.SimpleDateFormat
 import java.util.*
 
-/**
- * A simple [Fragment] subclass.
- */
 class CasesFragment : Fragment() {
 
     private val retrofit = RetrofitInitializer().getRetrofit()
-    private val listStates: MutableList<State> = mutableListOf()
     private lateinit var fragmentView: View
+    private lateinit var adapterBrazilianStates: AdapterBrazilianStates
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        adapterBrazilianStates = AdapterBrazilianStates()
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -39,34 +39,32 @@ class CasesFragment : Fragment() {
 
         // Inflate the layout for this fragment
         fragmentView = inflater.inflate(R.layout.fragment_cases, container, false)
+
+        fragmentView.recycler_brazilian_states.setHasFixedSize(true)
+
+        loadCasesBrazil()
+        loadCasesByState()
+
         return fragmentView
     }
 
-    private fun setupRecyclerViewStates() {
-        activity?.let { fragmentActivity ->
-            fragmentView.recyclerViewEstados.layoutManager = LinearLayoutManager(fragmentActivity)
-            fragmentView.recyclerViewEstados.setHasFixedSize(true)
-            fragmentView.recyclerViewEstados.adapter =
-                AdapterStates(fragmentActivity, listStates)
-        }
-    }
-
     private fun loadCasesByState() {
-        listStates.clear()
-        val statesService = retrofit.create(StatesService::class.java)
-        statesService.casesByState().enqueue(object : retrofit2.Callback<ListStates> {
-            override fun onFailure(call: Call<ListStates>, t: Throwable) {
-                Log.e("BrazilFragment", "Failed to load state cases")
+        val statesService = retrofit.create(BrazilianStatesService::class.java)
+        statesService.casesByState().enqueue(object : retrofit2.Callback<ListBrazilianStates> {
+
+            override fun onResponse(call: Call<ListBrazilianStates>, response: Response<ListBrazilianStates>) {
+                if (response.isSuccessful) {
+                    val list = response.body()?.data
+                    list?.sortedByDescending { it.cases }
+                    adapterBrazilianStates.submitList(list)
+                    fragmentView.recycler_brazilian_states.adapter = adapterBrazilianStates
+                } else {
+                    Log.e(TAG, "Error: ${response.code()}")
+                }
             }
 
-            override fun onResponse(call: Call<ListStates>, response: Response<ListStates>) {
-                if (response.isSuccessful) {
-                    listStates.addAll(response.body()?.data ?: mutableListOf())
-                    listStates.sortByDescending { it.deaths }
-                    setupRecyclerViewStates()
-                } else {
-                    Log.e("BrazilFragment", "Error: ${response.code()}")
-                }
+            override fun onFailure(call: Call<ListBrazilianStates>, t: Throwable) {
+                Log.e(TAG, "Failed to load state cases")
             }
         })
     }
@@ -75,36 +73,36 @@ class CasesFragment : Fragment() {
         val brazilService = retrofit.create(BrazilService::class.java)
         brazilService.casesBrazil().enqueue(object : retrofit2.Callback<Country> {
             override fun onFailure(call: Call<Country>, t: Throwable) {
-                Log.e("BrazilFragment", "Failed to load brazil cases")
+                Log.e(TAG, "Failed to load brazil cases")
             }
 
             override fun onResponse(call: Call<Country>, response: Response<Country>) {
                 if (response.isSuccessful) {
-                    val dadosBrasil = response.body()?.data
-                    showDataBrazil(dadosBrasil ?: Brazil())
+                    val brazilData = response.body()?.data
+                    showDataBrazil(brazilData ?: Brazil())
                 } else {
-                    Log.e("BrazilFragment", "Error: ${response.code()}")
+                    Log.e(TAG, "Error: ${response.code()}")
                 }
             }
         })
     }
 
-    private fun showDataBrazil(dataBrazil: Brazil) {
+    private fun showDataBrazil(brazilData: Brazil) {
 
-        fragmentView.textNumberConfirmed.text = dataBrazil.confirmed.formatNumber()
-        fragmentView.textNumeroAtivos.text = dataBrazil.cases.formatNumber()
-        fragmentView.textNumeroRecuperados.text = dataBrazil.recovered.formatNumber()
-        fragmentView.textNumberDeaths.text = dataBrazil.deaths.formatNumber()
-        fragmentView.textDataAualizacao.text = formatDate(dataBrazil.updated_at)
+        fragmentView.text_number_confirmed.text = brazilData.confirmed.formatNumber()
+        fragmentView.text_number_active.text = brazilData.cases.formatNumber()
+        fragmentView.text_recovered_number.text = brazilData.recovered.formatNumber()
+        fragmentView.text_number_deaths.text = brazilData.deaths.formatNumber()
+        fragmentView.text_update_date.text = formatDate(brazilData.updated_at)
     }
 
-    private fun formatDate(dataAtualizacao: String): String {
+    private fun formatDate(updateTime: String): String {
         var simpleDateFormat = SimpleDateFormat(
             "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'",
             Locale.getDefault()
         )
         simpleDateFormat.timeZone = TimeZone.getTimeZone("UTC")
-        val data = simpleDateFormat.parse(dataAtualizacao)
+        val data = simpleDateFormat.parse(updateTime)
         return if (data != null) {
             simpleDateFormat = SimpleDateFormat("dd MMM yyyy - HH:mm", Locale.getDefault())
             simpleDateFormat.timeZone = TimeZone.getDefault()
@@ -114,9 +112,8 @@ class CasesFragment : Fragment() {
         }
     }
 
-    override fun onStart() {
-        super.onStart()
-        loadCasesBrazil()
-        loadCasesByState()
+    companion object {
+        fun newInstance() = CasesFragment()
+        private val TAG = CasesFragment::class.simpleName
     }
 }
