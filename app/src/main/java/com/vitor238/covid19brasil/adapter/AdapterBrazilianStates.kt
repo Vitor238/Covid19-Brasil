@@ -1,17 +1,17 @@
 package com.vitor238.covid19brasil.adapter
 
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.makeramen.roundedimageview.RoundedImageView
 import com.vitor238.covid19brasil.R
 import com.vitor238.covid19brasil.extension.formatNumber
+import com.vitor238.covid19brasil.helper.StatesUtils
 import com.vitor238.covid19brasil.model.BrazilianState
 import kotlinx.android.synthetic.main.item_brazilian_state.view.*
 
@@ -27,22 +27,20 @@ class AdapterBrazilianStates :
     }
 
     class ViewHolder(item: View) : RecyclerView.ViewHolder(item) {
-        private val imageState: RoundedImageView = item.image_brazilian_state
+        private val imageState: ImageView = item.image_brazilian_state
         private val textStateName: TextView = item.text_brazilian_state_name
         private val textNumberConfirmed: TextView = item.text_number_confirmed
         private val textNumberDeaths: TextView = item.text_number_deaths
 
         fun bind(brazilianState: BrazilianState) {
 
-            Glide.with(imageState.context).load(
-                "https://devarthurribeiro.github.io/covid19-brazil-api/" +
-                        "static/flags/${brazilianState.uf}.png")
+            Glide.with(imageState.context).load(StatesUtils.getFlag(brazilianState.uf))
                 .into(imageState)
             textStateName.text = brazilianState.state
             textNumberConfirmed.text = brazilianState.cases.formatNumber()
             textNumberDeaths.text = brazilianState.deaths.formatNumber()
-        }
 
+        }
 
         companion object {
             fun from(parent: ViewGroup): ViewHolder {

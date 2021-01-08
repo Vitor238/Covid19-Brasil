@@ -3,12 +3,12 @@ package com.vitor238.covid19brasil.adapter
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.makeramen.roundedimageview.RoundedImageView
 import com.vitor238.covid19brasil.R
 import com.vitor238.covid19brasil.model.UsefulLink
 import kotlinx.android.synthetic.main.item_links.view.*
@@ -26,7 +26,7 @@ class AdapterLinks(private val onClickListener:((usefulLink:UsefulLink) -> Unit)
     }
 
     class ViewHolder(item: View) : RecyclerView.ViewHolder(item){
-        private val imageThumbnail: RoundedImageView = item.image_thumbnail
+        private val imageThumbnail: ImageView = item.image_thumbnail
         private val textTitle: TextView = item.text_title
         private val textAuthor: TextView = item.text_author
 

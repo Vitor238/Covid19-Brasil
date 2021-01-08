@@ -29,18 +29,17 @@ Covid 19 Brasil is an app with the objective of helping the population to face t
 <img src="./screenshots/screenshot_1_en.png" alt="Screenshot 1"
 width="180"> <img src="./screenshots/screenshot_2_en.png"
 alt="Screenshot 2" width="180" hspace="4"> <img src="./screenshots/screenshot_3_en.png" alt="Screenshot 3"
-width="180"> <img src="./screenshots/screenshot_4_en.png" alt="Screenshot 4"
 width="180">
 </p>
 
 ## Download app
 
-You can download it by clicking on this [link](https://github.com/Vitor238/covid19brasil/raw/master/covid19-brasil.apk)
+You can download it by clicking on this [link](https://github.com/Vitor238/Covid19-Brasil/releases/download/v1.3.0/covid19brasil.apk)
 
 ## Building the project
 
 1. Clone the project by copying this command to your terminal:
-   
+
    ```bash
    https://github.com/Vitor238/covid19brasil.git
    ```
@@ -62,6 +61,7 @@ You can download it by clicking on this [link](https://github.com/Vitor238/covid
 * [Coronavirus infographic of woman having symptoms](https://br.freepik.com/vetores-gratis/infografico-de-coronavirus-de-mulher-com-sintomas_7268263.htm#page=3&query=infografico+covid&position=39)
 * Base logo icon - [Anthony Ledoux](https://www.iconfinder.com/Vntole)
 * Bottom navigation icons - [Mangsaabguru](https://www.iconfinder.com/mangsaab) e [KonKapp](https://www.iconfinder.com/konkapp)
+* [State flags](https://pt.wikipedia.org/wiki/Lista_de_bandeiras_do_Brasil)
 
 #### Symptom, prevention and treatment information
 

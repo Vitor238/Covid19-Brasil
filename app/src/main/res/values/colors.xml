@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">@color/white</color>
-    <color name="colorPrimaryDark">@color/darker_grey</color>
-    <color name="colorAccent">#4CAF50</color>
+
+    <color name="primaryColor">#43a047</color>
+    <color name="primaryLightColor">#76d275</color>
+    <color name="primaryDarkColor">#00701a</color>
+    <color name="secondaryColor">#66bb6a</color>
+    <color name="secondaryLightColor">#98ee99</color>
+    <color name="secondaryDarkColor">#338a3e</color>
+
     <color name="risk_1">#EFF1CE</color>
     <color name="risk_2">#CBDBA5</color>
     <color name="risk_3">#A5C479</color>

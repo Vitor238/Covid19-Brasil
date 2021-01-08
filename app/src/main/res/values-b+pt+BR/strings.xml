@@ -1,0 +1,157 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Covid19 Brasil</string>
+    <string name="brazil">Brasil</string>
+    <string name="cases">Casos</string>
+    <string name="symptoms">Sintomas</string>
+    <string name="care">Cuidados</string>
+    <string name="transmission">Transmissão</string>
+    <string name="prevention">Prevenção</string>
+    <string name="covid_description">COVID-19 (do inglês Coronavirus Disease 2019) é uma doença infeciosa causada pelo coronavírus da síndrome respiratória aguda grave 2 (SARS-CoV-2).</string>
+    <string name="symptoms_description">Os sintomas da COVID-19 podem variar de um simples resfriado até uma pneumonia severa.</string>
+    <string name="prevention_description">Saber como prevenir a COVID 19 e como ela é transmitida é uma ferramenta importante no combate à doença.</string>
+    <string name="symptoms_info">
+        Os sintomas mais comuns de COVID-19 são \n
+        \n
+        \u2022 Febre \n
+        \u2022 Tosse seca \n
+        \u2022 Fadiga \n
+        \n
+        Outros sintomas que são menos comuns e podem afetar alguns pacientes incluem: \n
+        \n
+        \u2022 Perda de paladar ou cheiro, \n
+        \u2022 Congestão nasal, \n
+        \u2022 Conjuntivite (também conhecida como olhos vermelhos) \n
+        \u2022 Dor de garganta, \n
+        \u2022 Dor de cabeça, \n
+        \u2022 Dores musculares ou articulares, \n
+        \u2022 Diferentes tipos de erupção cutânea, \n
+        \u2022 Náusea ou vômito, \n
+        \u2022 Diarreia, \n
+        \u2022 Calafrios ou tonturas. \n
+        \n
+        Os sintomas geralmente são leves. Algumas pessoas ficam infectadas, mas apresentam apenas sintomas leves ou nenhum sintoma. \n
+        \n
+        Os sintomas de doença COVID ‐ 19 grave incluem: \n
+        \u2022 Falta de ar, \n
+        \u2022 Perda de apetite, \n
+        \u2022 Confusão, \n
+        \u2022 Dor ou pressão persistente no peito, \n
+        \u2022 Febre alta (acima de 38 ° C). \n
+        \n
+        Outros sintomas menos comuns são: \n
+        \n
+        \u2022 Irritabilidade, \n
+        \u2022 Confusão, \n
+        \u2022 Consciência reduzida (às vezes associada a convulsões), \n
+        \u2022 Ansiedade, \n
+        \u2022 Depressão, \n
+        \u2022 Distúrbios do sono, \n
+        \u2022 Complicações neurológicas mais graves e raras, como derrames, inflamação do cérebro, delírio e danos nos nervos. \n
+    </string>
+    <string name="transmission_list">
+        A transmissão acontece de uma pessoa doente para outra ou por contato próximo por meio de: \n
+        \n
+        \u2022 Toque do aperto de mão \n
+        \u2022 Gotículas de saliva \n
+        \u2022 Espirro \n
+        \u2022 Tosse \n
+        \u2022 Catarro \n
+        \u2022 Objetos ou superfícies contaminadas, como celulares, mesas, maçanetas, brinquedos, teclados de computador etc.
+    </string>
+    <string name="prevention_list">
+        As recomendações de prevenção à COVID-19 são as seguintes: \n
+        \n
+        \u2022 Lave com frequência as mãos até a altura dos punhos, com água e sabão, ou então higienize com álcool em gel 70%. \n
+        \u2022 Ao tossir ou espirrar, cubra nariz e boca com lenço ou com o braço, e não com as mãos. \n
+        \u2022 Evite tocar olhos, nariz e boca com as mãos não lavadas. \n
+        \u2022 Ao tocar, lave sempre as mãos como já indicado. \n
+        \u2022 Mantenha uma distância mínima de cerca de 2 metros de qualquer pessoa tossindo ou espirrando. \n
+        \u2022 Evite abraços, beijos e apertos de mãos. Adote um comportamento amigável sem contato físico, mas sempre com um sorriso no rosto. \n
+        \u2022 Higienize com frequência o celular e os brinquedos das crianças. \n
+        \u2022 Não compartilhe objetos de uso pessoal, como talheres, toalhas, pratos e copos. \n
+        \u2022 Mantenha os ambientes limpos e bem ventilados. \n
+        \u2022 Evite circulação desnecessária nas ruas, estádios, teatros, shoppings, shows, cinemas e igrejas. Se puder, fique em casa. \n
+        \u2022 Se estiver doente, evite contato físico com outras pessoas, principalmente idosos e doentes crônicos, e fique em casa até melhorar. \n
+        \u2022 Durma bem e tenha uma alimentação saudável. \n
+        \u2022 Utilize máscaras caseiras ou artesanais feitas de tecido em situações de saída de sua residência. \n
+    </string>
+    <string name="useful_links">Links úteis</string>
+    <string name="confirmed">Confirmados</string>
+    <string name="active">Ativos</string>
+    <string name="recovered">Recuperados</string>
+    <string name="deaths">Mortes</string>
+    <string name="states">Estados</string>
+    <string name="ministry_of_health">Ministério da Saúde</string>
+    <string name="updatedAt">Atualizado em</string>
+    <string name="error">Erro</string>
+    <string name="atila">Atila Iamarino - Biólogo</string>
+    <string name="bbc">BBC Brasil</string>
+    <string name="link_title_1">Aprenda a maneira correta de lavar as mãos</string>
+    <string name="link_title_2">"Como se proteger da COVID-19</string>
+    <string name="link_title_3">Aprenda a fazer sua máscara de pano com agulha e linha</string>
+    <string name="link_title_4">Como são os sintomas da COVID-19?</string>
+    <string name="link_title_5">@string/ministry_of_health</string>
+    <string name="link_title_6">Organização Mundial da Saúde - COVID-19 (Inglês)</string>
+    <string name="link_title_7">Qual o Futuro do Coronavírus e da COVID-19?</string>
+    <string name="link_title_8">Covid-19: qual o risco de contágio que cada atividade oferece?</string>
+    <string name="risk_1">1 Baixo</string>
+    <string name="risk_2">2 Baixo</string>
+    <string name="risk_3">3 Baixo Moderado</string>
+    <string name="risk_4">4 Baixo Moderado</string>
+    <string name="risk_5">5 Moderado</string>
+    <string name="risk_6">6 Moderado</string>
+    <string name="risk_7">7 Moderado Alto</string>
+    <string name="risk_8">8 Alto</string>
+    <string name="risk_9">9 Alto</string>
+    <string name="risky_activity_list_1">\u2022 Abrir correspondência</string>
+    <string name="risky_activity_list_2">
+        \u2022 Comprar comida pra levar \n
+        \u2022 Abaster carro \n
+        \u2022 Jogar tênis \n
+        \u2022 Acampar \n
+        \u2022 Jogar gold \n
+    </string>
+    <string name="risky_activity_list_3">
+        \u2022 Ir ao supermercado \n
+        \u2022 Caminhar,correr ou andar de bicicleta com outras pessoas \n
+    </string>
+    <string name="risky_activity_list_4">
+        \u2022 Ficar hospedado em hotel por duas noites \n
+        \u2022 Esperar na recepção do consultório médico \n
+        \u2022 Ir à biblioteca ou ao museu \n
+        \u2022 Comer em restaurante(área externa) \n
+        \u2022 Caminhar pelo centro da cidade \n
+        \u2022 Passar uma hora em parque infantil \n
+    </string>
+    <string name="risky_activity_list_5">
+        \u2022 Jantar na casa de outra pessoa \n
+        \u2022 Ir a churrasco \n
+        \u2022 Ir à praia ou ao shopping \n
+    </string>
+    <string name="risky_activity_list_6" tools:ignore="Typos">
+        \u2022 Mandar as crianças à escola, ao acampamento ou à creche \n
+        \u2022 Trabalhar por uma semana em escritório \n
+        \u2022 Nadar em piscina pública \n
+        \u2022 Visitar idosos em casa \n
+    </string>
+    <string name="risky_activity_list_7">
+        \u2022 Ir a salão de beleza ou barbearia \n
+        \u2022 Comer em restaurante(área interna) \n
+        \u2022 Ir a casamento ou funeral \n
+        \u2022 Viajar de avião \n
+        \u2022 Jogar basquete \n
+        \u2022 Abraçar ou apertar a mão de alguém \n
+    </string>
+    <string name="risky_activity_list_8">
+        \u2022 Comer em bufê \n
+        \u2022 Ir à academia de ginástica \n
+        \u2022 Ir ao parque de diversões ou ao cinema \n
+    </string>
+    <string name="risky_activity_list_9">
+        \u2022 Ir a show grande ou evento esportivo em estádio \n
+        \u2022 Ir a culto religioso com 500 ou mais fiéis \n
+        \u2022 Ir ao bar \n
+    </string>
+    <string name="risky_activities_description">Esta classificação de atividades de risco foi elaborada por um grupo médicos do Comitê de Doenças Infecciosas da Associação Médica do Texas (TMA). Para todas as atividades da lista, os médicos assumiram que os participantes estariam usando máscaras, mantendo uma distância de pelo menos dois metros de pessoas que não são familiares e lavando as mãos sempre que possível.</string>
+    <string name="risky_activities">Atividades de risco</string>
+</resources>

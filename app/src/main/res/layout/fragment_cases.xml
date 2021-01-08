@@ -11,181 +11,177 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <androidx.cardview.widget.CardView
+        <com.google.android.material.card.MaterialCardView
+            style="@style/CardStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            app:cardCornerRadius="8dp">
+            android:layout_margin="8dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center_horizontal"
-                android:orientation="vertical"
-                android:padding="16dp">
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
 
-                <ImageView
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:contentDescription="@string/cases"
-                    android:src="@drawable/home" />
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="194dp"
+                    android:background="?attr/colorPrimaryVariant">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/cases"
+                        android:src="@drawable/home" />
+                </FrameLayout>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
+                    android:layout_margin="16dp"
                     android:text="@string/covid_description"
-                    android:textSize="12sp" />
+                    android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2" />
 
             </LinearLayout>
-        </androidx.cardview.widget.CardView>
+        </com.google.android.material.card.MaterialCardView>
 
-
-        <androidx.cardview.widget.CardView
+        <RelativeLayout
             android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp">
+
+            <TextView
+                android:id="@+id/text_brazil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="4dp"
+                android:text="@string/brazil"
+                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Headline6" />
+
+            <TextView
+                android:id="@+id/text_confirmed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_brazil"
+                android:layout_alignParentStart="true"
+                android:layout_margin="4dp"
+                android:text="@string/confirmed"
+                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2" />
+
+            <TextView
+                android:id="@+id/text_number_confirmed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_brazil"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="4dp"
+                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/text_active"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_confirmed"
+                android:layout_alignParentStart="true"
+                android:layout_margin="4dp"
+                android:text="@string/active"
+                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2" />
+
+            <TextView
+                android:id="@+id/text_number_active"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_confirmed"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="4dp"
+                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/text_recovered"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_active"
+                android:layout_alignParentStart="true"
+                android:layout_margin="4dp"
+                android:text="@string/recovered"
+                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2" />
+
+            <TextView
+                android:id="@+id/text_recovered_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_active"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="4dp"
+                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/text_deaths"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_recovered"
+                android:layout_alignParentStart="true"
+                android:layout_margin="4dp"
+                android:text="@string/deaths"
+                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2" />
+
+            <TextView
+                android:id="@+id/text_number_deaths"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_recovered"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="4dp"
+                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
+                tools:text="0" />
+
+            <TextView
+                android:id="@+id/text_updated_on"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_number_deaths"
+                android:layout_alignParentStart="true"
+                android:layout_margin="4dp"
+                android:text="@string/updatedAt"
+                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2" />
+
+            <TextView
+                android:id="@+id/text_update_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_number_deaths"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="4dp"
+                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
+                tools:text="0" />
+
+        </RelativeLayout>
+
+        <include
+            layout="@layout/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            app:cardCornerRadius="8dp">
+            android:text="@string/states"
+            android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Headline6" />
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:padding="16dp">
-
-                <TextView
-                    android:id="@+id/text_brazil"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_margin="4dp"
-                    android:fontFamily="@font/poppins_bold"
-                    android:text="@string/brazil"
-                    android:textSize="24sp" />
-
-                <TextView
-                    android:id="@+id/text_confirmed"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/text_brazil"
-                    android:layout_alignParentStart="true"
-                    android:layout_margin="4dp"
-                    android:text="@string/confirmed" />
-
-                <TextView
-                    android:id="@+id/text_number_confirmed"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/text_brazil"
-                    android:layout_alignParentEnd="true"
-                    android:layout_margin="4dp"
-                    tools:text="0" />
-
-                <TextView
-                    android:id="@+id/text_active"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/text_confirmed"
-                    android:layout_alignParentStart="true"
-                    android:layout_margin="4dp"
-                    android:text="@string/active" />
-
-                <TextView
-                    android:id="@+id/text_number_active"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/text_confirmed"
-                    android:layout_alignParentEnd="true"
-                    android:layout_margin="4dp"
-                    tools:text="0" />
-
-                <TextView
-                    android:id="@+id/text_recovered"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/text_active"
-                    android:layout_alignParentStart="true"
-                    android:layout_margin="4dp"
-                    android:text="@string/recovered" />
-
-                <TextView
-                    android:id="@+id/text_recovered_number"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/text_active"
-                    android:layout_alignParentEnd="true"
-                    android:layout_margin="4dp"
-                    tools:text="0" />
-
-                <TextView
-                    android:id="@+id/text_deaths"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/text_recovered"
-                    android:layout_alignParentStart="true"
-                    android:layout_margin="4dp"
-                    android:text="@string/deaths" />
-
-                <TextView
-                    android:id="@+id/text_number_deaths"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/text_recovered"
-                    android:layout_alignParentEnd="true"
-                    android:layout_margin="4dp"
-                    tools:text="0" />
-
-                <TextView
-                    android:id="@+id/text_updated_on"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/text_number_deaths"
-                    android:layout_alignParentStart="true"
-                    android:layout_margin="4dp"
-                    android:text="@string/updatedAt" />
-
-                <TextView
-                    android:id="@+id/text_update_date"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/text_number_deaths"
-                    android:layout_alignParentEnd="true"
-                    android:layout_margin="4dp"
-                    tools:text="0" />
-
-            </RelativeLayout>
-
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_brazilian_states"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            app:cardCornerRadius="8dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:padding="16dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="4dp"
-                    android:fontFamily="@font/poppins_bold"
-                    android:text="@string/states"
-                    android:textSize="24sp" />
-
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/recycler_brazilian_states"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                    tools:listitem="@layout/item_brazilian_state" />
-
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_brazilian_state" />
 
     </LinearLayout>
 

@@ -29,18 +29,17 @@ Covid19 Brasil é um aplicativo com o objetivo de ajudar a população a enfrent
 <img src="./screenshots/screenshot_1.png" alt="Captura de tela 1"
 width="180"> <img src="./screenshots/screenshot_2.png"
 alt="Captura de tela 2" width="180" hspace="4"> <img src="./screenshots/screenshot_3.png" alt="Captura de tela 3"
-width="180"> <img src="./screenshots/screenshot_4.png" alt="Captura de tela 4"
 width="180">
 </p>
 
 ## Baixar app
 
-Você pode fazer o download clicando neste [link](https://github.com/Vitor238/covid19brasil/raw/master/covid19-brasil.apk)
+Você pode fazer o download clicando neste [link](https://github.com/Vitor238/Covid19-Brasil/releases/download/v1.3.0/covid19brasil.apk)
 
 ## Executar o projeto
 
 1. Clone o projeto copiando este comando em seu terminal :
-   
+
    ```bash
    git clone https://github.com/Vitor238/covid19brasil.git
    ```
@@ -64,6 +63,8 @@ Você pode fazer o download clicando neste [link](https://github.com/Vitor238/co
 * Icone base do logo - [Anthony Ledoux](https://www.iconfinder.com/Vntole)
 
 * Icones do bottom navigation - [Mangsaabguru](https://www.iconfinder.com/mangsaab) e [KonKapp](https://www.iconfinder.com/konkapp)
+
+* [Bandeiras de estados](https://pt.wikipedia.org/wiki/Lista_de_bandeiras_do_Brasil)
 
 #### Informações de sintomas,prevenção e tratamento
 
