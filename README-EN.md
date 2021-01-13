@@ -26,15 +26,15 @@ Covid 19 Brasil is an app with the objective of helping the population to face t
 ## Screenshots
 
 <p align="center">
-<img src="./screenshots/screenshot_1_en.png" alt="Screenshot 1"
-width="180"> <img src="./screenshots/screenshot_2_en.png"
-alt="Screenshot 2" width="180" hspace="4"> <img src="./screenshots/screenshot_3_en.png" alt="Screenshot 3"
+<img src="./screenshots/screenshot_1_en.png" alt="Screenshot 1" 
+width="180"> <img src="./screenshots/screenshot_2_en.png" 
+alt="Screenshot 2" width="180" hspace="4"> <img src="./screenshots/screenshot_3_en.png" alt="Screenshot 3" 
 width="180">
 </p>
 
 ## Download app
 
-You can download it by clicking on this [link](https://github.com/Vitor238/Covid19-Brasil/releases/download/v1.3.0/covid19brasil.apk)
+You can download it by clicking on this [link](https://github.com/Vitor238/Covid19-Brasil/releases/download/v1.4.0/covid19brasil.apk)
 
 ## Building the project
 
@@ -52,7 +52,9 @@ You can download it by clicking on this [link](https://github.com/Vitor238/Covid
 
 * [Retrofit](https://github.com/square/retrofit)
 * [Glide](https://github.com/bumptech/glide)
-* [Proguard](https://developer.android.com/studio/build/shrink-code)
+* [Android Architecture Components](https://developer.android.com/topic/libraries/architecture)
+* [Coroutines](https://developer.android.com/kotlin/coroutines)
+* [R8](https://developer.android.com/studio/build/shrink-code)
 * [RoundedImageView](https://github.com/vinc3m1/RoundedImageView)
 * [COVID-19 Brazil API](https://github.com/devarthurribeiro/covid19-brazil-api) - [Arthur Ribeiro](https://github.com/devarthurribeiro)
 
