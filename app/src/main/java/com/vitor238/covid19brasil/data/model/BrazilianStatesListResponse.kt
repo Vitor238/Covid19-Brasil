@@ -13,9 +13,9 @@ data class BrazilianStatesListResponse(
                 uf = it.uf,
                 state = it.state,
                 cases = it.cases.formatNumber(),
-                deaths = it.cases.formatNumber(),
-                suspects = it.cases.formatNumber(),
-                refuses = it.cases.formatNumber(),
+                deaths = it.deaths.formatNumber(),
+                suspects = it.suspects.formatNumber(),
+                refuses = it.refuses.formatNumber(),
                 datetime = it.datetime.formatDate()
             )
             brazilianStates.add(brazilianState)

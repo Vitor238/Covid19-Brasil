@@ -33,7 +33,7 @@ class CasesFragment : Fragment() {
             binding.textNumberActive.text = brazil.cases
             binding.textRecoveredNumber.text = brazil.recovered
             binding.textNumberDeaths.text = brazil.deaths
-            binding.textUpdatedOn.text = brazil.updatedAt
+            binding.textUpdateDate.text = brazil.updatedAt
         }
 
         casesViewModel.casesByState.observe(viewLifecycleOwner) {

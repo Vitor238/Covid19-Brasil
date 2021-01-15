@@ -34,7 +34,7 @@ width="180">
 
 ## Baixar app
 
-Você pode fazer o download clicando neste [link](https://github.com/Vitor238/Covid19-Brasil/releases/download/v1.4.0/covid19brasil.apk)
+Você pode fazer o download clicando neste [link](https://github.com/Vitor238/Covid19-Brasil/releases/download/v1.4.1/covid19brasil.apk)
 
 ## Executar o projeto
 
