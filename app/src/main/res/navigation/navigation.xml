@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/casesFragment">
+
+    <fragment
+        android:id="@+id/casesFragment"
+        android:name="com.vitor238.covid19brasil.ui.cases.CasesFragment"
+        android:label="fragment_cases"
+        tools:layout="@layout/fragment_cases" />
+    <fragment
+        android:id="@+id/symptomsFragment"
+        android:name="com.vitor238.covid19brasil.ui.symptoms.SymptomsFragment"
+        android:label="fragment_symptoms"
+        tools:layout="@layout/fragment_symptoms" />
+    <fragment
+        android:id="@+id/careFragment"
+        android:name="com.vitor238.covid19brasil.ui.care.CareFragment"
+        android:label="CareFragment" />
+    <fragment
+        android:id="@+id/risksFragment"
+        android:name="com.vitor238.covid19brasil.ui.risks.RisksFragment"
+        android:label="fragment_risks"
+        tools:layout="@layout/fragment_risks" />
+    <fragment
+        android:id="@+id/usefulLinksFragment"
+        android:name="com.vitor238.covid19brasil.ui.usefullinks.UsefulLinksFragment"
+        android:label="fragment_useful_links"
+        tools:layout="@layout/fragment_useful_links" />
+</navigation>

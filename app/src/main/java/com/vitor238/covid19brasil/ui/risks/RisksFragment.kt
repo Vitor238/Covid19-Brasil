@@ -38,8 +38,4 @@ class RisksFragment : Fragment() {
         _binding = null
     }
 
-    companion object {
-        fun newInstance() = RisksFragment()
-    }
-
 }

@@ -154,4 +154,8 @@
     </string>
     <string name="risky_activities_description">This ranking of risky activities was developed by a medical group from the Texas Medical Association Infectious Diseases Committee (TMA). For all activities on the list, doctors assumed that participants would be wearing masks, keeping a distance of at least two meters from unfamiliar people and washing their hands whenever possible</string>
     <string name="risky_activities">Risk activities</string>
+    <string name="suspects">Suspects</string>
+    <string name="refuses">Refuses</string>
+    <string name="details">Details</string>
+    <string name="state_flag">State\'s flag</string>
 </resources>

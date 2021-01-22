@@ -1,4 +1,4 @@
-<h1 align="center">Covid 19 Brasil</h1>
+<h1 align="center">Covid19 Brasil</h1>
 
 
 <p align="center">
@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
- <a href="./README-EN.md">:us: Read me English</a> •
+ <a href="./README-EN.md">Read me English</a> •
  <a href="#sobre">Sobre</a> •
   <a href="#capturas-de-tela">Capturas de tela</a> •
  <a href="#baixar-app">Baixar app</a> •
@@ -34,7 +34,7 @@ width="180">
 
 ## Baixar app
 
-Você pode fazer o download clicando neste [link](https://github.com/Vitor238/Covid19-Brasil/releases/download/v1.4.1/covid19brasil.apk)
+Você pode fazer o download clicando neste [link](https://github.com/Vitor238/Covid19-Brasil/releases/download/v1.5.0/covid19brasil.apk)
 
 ## Executar o projeto
 
@@ -53,7 +53,9 @@ Você pode fazer o download clicando neste [link](https://github.com/Vitor238/Co
 * [Retrofit](https://github.com/square/retrofit)
 * [Glide](https://github.com/bumptech/glide)
 * [Componentes da arquitetura do Android](https://developer.android.com/topic/libraries/architecture?hl=pt-br)
-* [Coroutines](https://developer.android.com/kotlin/coroutines?hl=pt-br)
+* [Componentes de navegação](https://developer.android.com/guide/navigation?hl=pt-br)
+* [Componentes do Material Design](https://material.io/components?platform=android)
+* [Corrotinas](https://developer.android.com/kotlin/coroutines?hl=pt-br)
 * [R8](https://developer.android.com/studio/build/shrink-code?hl=pt-br)
 * [RoundedImageView](https://github.com/vinc3m1/RoundedImageView)
 * [COVID-19 Brazil API](https://github.com/devarthurribeiro/covid19-brazil-api) - [Arthur Ribeiro](https://github.com/devarthurribeiro)

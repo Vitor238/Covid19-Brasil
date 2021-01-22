@@ -45,8 +45,4 @@ class UsefulLinksFragment : Fragment() {
         super.onDestroyView()
         _binding = null
     }
-
-    companion object {
-        fun newInstance() = UsefulLinksFragment()
-    }
 }

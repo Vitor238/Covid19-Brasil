@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.Covid19Brasil" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <style name="Theme.Covid19Brasil" parent="Theme.MaterialComponents.Light.DarkActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/primaryColor</item>
         <item name="colorPrimaryVariant">@color/primaryDarkColor</item>
@@ -14,5 +14,6 @@
         <!-- Customize your theme here. -->
         <item name="colorSurface">@color/white</item>
         <item name="colorOnSurface">@color/black</item>
+
     </style>
 </resources>

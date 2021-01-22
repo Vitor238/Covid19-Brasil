@@ -21,10 +21,6 @@ class CareFragment : Fragment() {
         return binding.root
     }
 
-    companion object {
-        fun newInstance() = CareFragment()
-    }
-
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null

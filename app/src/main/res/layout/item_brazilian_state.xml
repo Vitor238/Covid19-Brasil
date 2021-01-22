@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/relativeLayout"
+    android:id="@+id/item_container"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="?attr/selectableItemBackground"
@@ -44,12 +44,13 @@
         android:layout_marginStart="16dp"
         android:maxLines="1"
         android:paddingEnd="16dp"
-        android:text="@string/confirmed"
+        android:text="@string/cases"
         android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
         android:textColor="@color/mtrl_list_item_tint"
         app:layout_constraintBottom_toTopOf="@+id/text_deaths"
         app:layout_constraintStart_toEndOf="@id/image_brazilian_state"
-        app:layout_constraintTop_toBottomOf="@+id/text_brazilian_state_name" />
+        app:layout_constraintTop_toBottomOf="@+id/text_brazilian_state_name"
+        tools:ignore="RtlSymmetry" />
 
     <TextView
         android:id="@+id/text_number_confirmed"
@@ -78,7 +79,8 @@
         android:textColor="@color/mtrl_list_item_tint"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@id/image_brazilian_state"
-        app:layout_constraintTop_toBottomOf="@+id/text_confirmed" />
+        app:layout_constraintTop_toBottomOf="@+id/text_confirmed"
+        tools:ignore="RtlSymmetry" />
 
     <TextView
         android:id="@+id/text_number_deaths"
@@ -95,7 +97,7 @@
         tools:text="100" />
 
     <include
-layout="@layout/divider"
+        layout="@layout/divider"
         android:layout_width="0dp"
         android:layout_height="1dp"
         android:layout_marginStart="16dp"
@@ -104,65 +106,3 @@ layout="@layout/divider"
         app:layout_constraintStart_toEndOf="@+id/image_brazilian_state" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-<!--
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:background="?attr/selectableItemBackground"
-    android:minHeight="88dp">
-
-    <ImageView
-        android:id="@+id/image_brazilian_state"
-        android:layout_width="99dp"
-        android:layout_height="71dp"
-        android:scaleType="centerCrop"
-        tools:src="@drawable/ic_launcher_background"
-        android:layout_centerVertical="true"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:id="@+id/text_brazilian_state_name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical"
-        android:layout_toEndOf="@id/image_brazilian_state"
-        android:paddingTop="16dp"
-        android:paddingEnd="16dp"
-        android:paddingStart="20dp"
-        android:maxLines="1"
-        android:textAppearance="@style/TitleAppearance"
-        android:fontFamily="@font/poppins_bold"/>
-
-    <TextView
-        android:id="@+id/text_confirmed"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/text_brazilian_state_name"
-        android:layout_gravity="center_vertical"
-        android:layout_toEndOf="@id/image_brazilian_state"
-        android:paddingEnd="16dp"
-        android:maxLines="1"
-        android:paddingStart="20dp"
-        android:text="@string/confirmed"
-        android:textAppearance="?attr/textAppearanceBody2"
-        android:textColor="@color/mtrl_list_item_tint"/>
-
-    <TextView
-        android:id="@+id/text_deaths"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/text_confirmed"
-        android:layout_gravity="center_vertical"
-        android:layout_toEndOf="@id/image_brazilian_state"
-        android:paddingEnd="16dp"
-        android:maxLines="1"
-        android:paddingStart="20dp"
-        android:text="@string/deaths"
-        android:textAppearance="?attr/textAppearanceBody2"
-        android:textColor="@color/mtrl_list_item_tint"/>
-
-</RelativeLayout>
--->

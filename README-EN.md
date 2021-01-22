@@ -1,4 +1,4 @@
-<h1 align="center">Covid 19 Brazil</h1>
+<h1 align="center">Covid19 Brazil</h1>
 
 
 <p align="center">
@@ -21,7 +21,7 @@
 
 ## About
 
-Covid 19 Brasil is an app with the objective of helping the population to face the COVID 19 pandemic, informing its symptoms, ways of prevention and useful information
+Covid19 Brazil is an app with the objective of helping the population to face the COVID 19 pandemic, informing its symptoms, ways of prevention and useful information
 
 ## Screenshots
 
@@ -34,7 +34,7 @@ width="180">
 
 ## Download app
 
-You can download it by clicking on this [link](https://github.com/Vitor238/Covid19-Brasil/releases/download/v1.4.1/covid19brasil.apk)
+You can download it by clicking on this [link](https://github.com/Vitor238/Covid19-Brasil/releases/download/v1.5.0/covid19brasil.apk)
 
 ## Building the project
 
@@ -53,6 +53,8 @@ You can download it by clicking on this [link](https://github.com/Vitor238/Covid
 * [Retrofit](https://github.com/square/retrofit)
 * [Glide](https://github.com/bumptech/glide)
 * [Android Architecture Components](https://developer.android.com/topic/libraries/architecture)
+* [Material Design Components](https://material.io/components?platform=android)
+* [Navigation component](https://developer.android.com/guide/navigation)
 * [Coroutines](https://developer.android.com/kotlin/coroutines)
 * [R8](https://developer.android.com/studio/build/shrink-code)
 * [RoundedImageView](https://github.com/vinc3m1/RoundedImageView)

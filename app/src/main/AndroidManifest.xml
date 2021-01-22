@@ -11,8 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Covid19Brasil">
-        <activity android:name="com.vitor238.covid19brasil.ui.main.MainActivity" />
-        <activity android:name="com.vitor238.covid19brasil.ui.splash.SplashActivity">
+        <activity android:name=".ui.cases.DetailsActivity" />
+        <activity android:name=".ui.main.MainActivity" />
+        <activity android:name=".ui.splash.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

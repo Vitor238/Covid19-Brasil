@@ -154,4 +154,9 @@
     </string>
     <string name="risky_activities_description">Esta classificação de atividades de risco foi elaborada por um grupo médicos do Comitê de Doenças Infecciosas da Associação Médica do Texas (TMA). Para todas as atividades da lista, os médicos assumiram que os participantes estariam usando máscaras, mantendo uma distância de pelo menos dois metros de pessoas que não são familiares e lavando as mãos sempre que possível.</string>
     <string name="risky_activities">Atividades de risco</string>
+    <string name="suspects">Suspeitos</string>
+    <string name="refuses">Recusados</string>
+    <string name="details">Detalhes
+    </string>
+    <string name="state_flag">Bandeira do estado</string>
 </resources>
