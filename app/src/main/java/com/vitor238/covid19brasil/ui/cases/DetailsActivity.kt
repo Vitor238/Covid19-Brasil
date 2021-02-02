@@ -3,7 +3,6 @@ package com.vitor238.covid19brasil.ui.cases
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
 import android.view.Window
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -12,7 +11,7 @@ import com.google.android.material.transition.platform.MaterialArcMotion
 import com.google.android.material.transition.platform.MaterialContainerTransform
 import com.google.android.material.transition.platform.MaterialContainerTransformSharedElementCallback
 import com.vitor238.covid19brasil.R
-import com.vitor238.covid19brasil.data.model.BrazilianState
+import com.vitor238.covid19brasil.data.domain.BrazilianState
 import com.vitor238.covid19brasil.databinding.ActivityDetailsBinding
 import com.vitor238.covid19brasil.utils.StatesUtils
 

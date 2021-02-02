@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.vitor238.covid19brasil.data.model.UsefulLink
+import com.vitor238.covid19brasil.data.domain.UsefulLink
 import com.vitor238.covid19brasil.databinding.ItemLinksBinding
 
 class AdapterLinks(private val onClickListener: ((usefulLink: UsefulLink) -> Unit)) :

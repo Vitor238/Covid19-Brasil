@@ -1,4 +1,4 @@
-package com.vitor238.covid19brasil.data.model
+package com.vitor238.covid19brasil.data.domain
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
@@ -13,4 +13,4 @@ data class BrazilianState(
 	val suspects: String,
 	val refuses: String,
 	val datetime: String
-):Parcelable
+) : Parcelable

@@ -34,7 +34,7 @@ width="180">
 
 ## Download app
 
-You can download it by clicking on this [link](https://github.com/Vitor238/Covid19-Brasil/releases/download/v1.5.0/covid19brasil.apk)
+You can download it by clicking on this [link](https://github.com/Vitor238/Covid19-Brasil/releases/download/v1.6.0/covid19brasil.apk)
 
 ## Building the project
 
@@ -48,17 +48,19 @@ You can download it by clicking on this [link](https://github.com/Vitor238/Covid
 
 ## Libraries and Credits
 
-#### Libraries and statistics API
+#### Libraries and APIs
 
-* [Retrofit](https://github.com/square/retrofit)
-* [Glide](https://github.com/bumptech/glide)
 * [Android Architecture Components](https://developer.android.com/topic/libraries/architecture)
+* [Coroutines](https://developer.android.com/kotlin/coroutines)
+* [COVID-19 Brazil API](https://github.com/devarthurribeiro/covid19-brazil-api) - [Arthur Ribeiro](https://github.com/devarthurribeiro)
+* [Glide](https://github.com/bumptech/glide)
 * [Material Design Components](https://material.io/components?platform=android)
 * [Navigation component](https://developer.android.com/guide/navigation)
-* [Coroutines](https://developer.android.com/kotlin/coroutines)
 * [R8](https://developer.android.com/studio/build/shrink-code)
+* [Retrofit](https://github.com/square/retrofit)
+* [Room](https://developer.android.com/training/data-storage/room)
 * [RoundedImageView](https://github.com/vinc3m1/RoundedImageView)
-* [COVID-19 Brazil API](https://github.com/devarthurribeiro/covid19-brazil-api) - [Arthur Ribeiro](https://github.com/devarthurribeiro)
+* [WorkManager](https://developer.android.com/topic/libraries/architecture/workmanager)
 
 #### Images used in the APP
 

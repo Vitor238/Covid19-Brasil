@@ -20,4 +20,20 @@
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
 
--keep class com.vitor238.covid19brasil.data.model** { *; }
+# GLIDE
+-keep public class * implements com.bumptech.glide.module.GlideModule
+-keep class * extends com.bumptech.glide.module.AppGlideModule {
+ <init>(...);
+}
+-keep public enum com.bumptech.glide.load.ImageHeaderParser$** {
+  **[] $VALUES;
+  public *;
+}
+-keep class com.bumptech.glide.load.data.ParcelFileDescriptorRewinder$InternalRewinder {
+  *** rewind();
+}
+
+# MODELS
+-keep class com.vitor238.covid19brasil.data.database** { *; }
+-keep class com.vitor238.covid19brasil.data.domain** { *; }
+-keep class com.vitor238.covid19brasil.data.network** { *; }

@@ -6,12 +6,11 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
-import androidx.core.view.ViewCompat
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.vitor238.covid19brasil.data.model.BrazilianState
+import com.vitor238.covid19brasil.data.domain.BrazilianState
 import com.vitor238.covid19brasil.databinding.ItemBrazilianStateBinding
 import com.vitor238.covid19brasil.utils.StatesUtils
 

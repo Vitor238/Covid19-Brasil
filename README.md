@@ -34,7 +34,7 @@ width="180">
 
 ## Baixar app
 
-Você pode fazer o download clicando neste [link](https://github.com/Vitor238/Covid19-Brasil/releases/download/v1.5.0/covid19brasil.apk)
+Você pode fazer o download clicando neste [link](https://github.com/Vitor238/Covid19-Brasil/releases/download/v1.6.0/covid19brasil.apk)
 
 ## Executar o projeto
 
@@ -48,17 +48,19 @@ Você pode fazer o download clicando neste [link](https://github.com/Vitor238/Co
 
 ## Bibliotecas e Créditos
 
-#### Bibliotecas e API de estatísticas
+#### Bibliotecas e APIs
 
-* [Retrofit](https://github.com/square/retrofit)
-* [Glide](https://github.com/bumptech/glide)
 * [Componentes da arquitetura do Android](https://developer.android.com/topic/libraries/architecture?hl=pt-br)
 * [Componentes de navegação](https://developer.android.com/guide/navigation?hl=pt-br)
 * [Componentes do Material Design](https://material.io/components?platform=android)
 * [Corrotinas](https://developer.android.com/kotlin/coroutines?hl=pt-br)
-* [R8](https://developer.android.com/studio/build/shrink-code?hl=pt-br)
-* [RoundedImageView](https://github.com/vinc3m1/RoundedImageView)
 * [COVID-19 Brazil API](https://github.com/devarthurribeiro/covid19-brazil-api) - [Arthur Ribeiro](https://github.com/devarthurribeiro)
+* [Glide](https://github.com/bumptech/glide)
+* [R8](https://developer.android.com/studio/build/shrink-code?hl=pt-br)
+* [Retrofit](https://github.com/square/retrofit)
+* [Room](https://developer.android.com/training/data-storage/room?hl=pt-br)
+* [RoundedImageView](https://github.com/vinc3m1/RoundedImageView)
+* [WorkManager](https://developer.android.com/topic/libraries/architecture/workmanager?hl=pt-br)
 
 #### Imagens utilizadas no app
 

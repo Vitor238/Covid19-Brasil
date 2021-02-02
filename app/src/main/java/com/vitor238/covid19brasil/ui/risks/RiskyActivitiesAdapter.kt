@@ -7,7 +7,7 @@ import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.vitor238.covid19brasil.data.model.RiskyActivity
+import com.vitor238.covid19brasil.data.domain.RiskyActivity
 import com.vitor238.covid19brasil.databinding.ItemRiskBinding
 import com.vitor238.covid19brasil.utils.extension.getColorCompat
 

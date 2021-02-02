@@ -1,7 +1,7 @@
 package com.vitor238.covid19brasil.data.repository
 
 import com.vitor238.covid19brasil.R
-import com.vitor238.covid19brasil.data.model.UsefulLink
+import com.vitor238.covid19brasil.data.domain.UsefulLink
 
 class UsefulLinksRepository {
 

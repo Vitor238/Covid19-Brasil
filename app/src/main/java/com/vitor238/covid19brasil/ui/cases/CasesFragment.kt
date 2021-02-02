@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.vitor238.covid19brasil.data.model.BrazilianState
+import com.vitor238.covid19brasil.data.domain.BrazilianState
 import com.vitor238.covid19brasil.databinding.FragmentCasesBinding
 
 class CasesFragment : Fragment() {
@@ -49,23 +49,25 @@ class CasesFragment : Fragment() {
         super.onActivityCreated(savedInstanceState)
         val casesViewModel = ViewModelProvider(this).get(CasesViewModel::class.java)
 
-        casesViewModel.casesBrazil.observe(viewLifecycleOwner) { brazil ->
-            binding.textNumberConfirmed.text = brazil.confirmed
-            binding.textNumberActive.text = brazil.cases
-            binding.textRecoveredNumber.text = brazil.recovered
-            binding.textNumberDeaths.text = brazil.deaths
-            binding.textUpdateDate.text = brazil.updatedAt
+        casesViewModel.casesInBrazil.observe(viewLifecycleOwner) { brazil ->
+            brazil?.let {
+                binding.textNumberConfirmed.text = brazil.confirmed
+                binding.textNumberActive.text = brazil.cases
+                binding.textRecoveredNumber.text = brazil.recovered
+                binding.textNumberDeaths.text = brazil.deaths
+                binding.textUpdateDate.text = brazil.updatedAt
+            }
+
         }
 
         casesViewModel.casesByState.observe(viewLifecycleOwner) {
-            binding.recyclerBrazilianStates.setHasFixedSize(true)
             binding.recyclerBrazilianStates.adapter = adapterBrazilianStates
             adapterBrazilianStates.submitList(it)
         }
     }
 
-    override fun onDestroy() {
-        super.onDestroy()
+    override fun onDestroyView() {
+        super.onDestroyView()
         _binding = null
     }
 }
