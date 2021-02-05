@@ -8,15 +8,20 @@
     <color name="secondaryLightColor">#98ee99</color>
     <color name="secondaryDarkColor">#338a3e</color>
 
-    <color name="risk_1">#EFF1CE</color>
-    <color name="risk_2">#CBDBA5</color>
-    <color name="risk_3">#A5C479</color>
-    <color name="risk_4">#7C9E38</color>
-    <color name="risk_5">#FFDC8C</color>
-    <color name="risk_6">#F1BB3A</color>
-    <color name="risk_7">#F27354</color>
-    <color name="risk_8">#C11F1F</color>
-    <color name="risk_9">#6F2020</color>
+    <color name="risk_1">#007367</color>
+    <color name="risk_2">#007367</color>
+    <color name="risk_3">#678742</color>
+    <color name="risk_4">#678742</color>
+    <color name="risk_5">#F4A81D</color>
+    <color name="risk_6">#F4A81D</color>
+    <color name="risk_7">#ED6F23</color>
+    <color name="risk_8">#AB1D37</color>
+    <color name="risk_9">#AB1D37</color>
+
+    <color name="cases_blue">#006EDB</color>
+    <color name="cases_pink">#C7003A</color>
+    <color name="cases_green">#00701A</color>
+
     <color name="black">#000000</color>
     <color name="white">#FFFFFF</color>
     <color name="darker_grey">#AAA</color>

@@ -6,74 +6,57 @@
     <string name="care">Care</string>
     <string name="transmission">Transmission</string>
     <string name="prevention">Prevention</string>
-    <string name="covid_description">Coronavirus disease 2019 (COVID-19) is an infectious disease caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2).</string>
+    <string name="covid_description">COVID-19 is an infectious disease caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2).</string>
     <string name="symptoms_description">The symptoms of COVID-19 can range from a simple flu to severe pneumonia.</string>
     <string name="prevention_description">Knowing how to prevent COVID 19 and how it is transmitted is an important tool in combating the disease.</string>
-    <string name="symptoms_info">
-        The most common symptoms of COVID-19 are \n
-        \n
-        \u2022 Fever \n
-        \u2022 Dry cough \n
-        \u2022 Fatigue \n
-        \n
-        Other symptoms that are less common and may affect some patients include:  \n
-        \n
-        \u2022 Loss of taste or smell, \n
-        \u2022 Nasal congestion, \n
-        \u2022 Conjunctivitis (also known as red eyes) \n
-        \u2022 Sore throat, \n
-        \u2022 Headache, \n
-        \u2022 Muscle or joint pain, \n
-        \u2022 Different types of skin rash, \n
-        \u2022 Nausea or vomiting, \n
-        \u2022 Diarrhea, \n
-        \u2022 Chills or dizziness. \n
-        \n
-        Symptoms are usually mild. Some people become infected but only have very mild symptoms or none at all. \n
-        \n
-        Symptoms of severe COVID‐19 disease include: \n
-        \u2022 Shortness of breath, \n
-        \u2022 Loss of appetite, \n
-        \u2022 Confusion, \n
-        \u2022 Persistent pain or pressure in the chest, \n
-        \u2022 High temperature (above 38 °C). \n
-        \n
-        Other less common symptoms are: \n
-        \n
-        \u2022 Irritability, \n
-        \u2022 Confusion, \n
-        \u2022 Reduced consciousness (sometimes associated with seizures), \n
-        \u2022 Anxiety, \n
-        \u2022 Depression, \n
-        \u2022 Sleep disorders, \n
-        \u2022 More severe and rare neurological complications such as strokes, brain inflammation, delirium and nerve damage. \n
+    <string name="most_common_symptoms">Most common symptoms:</string>
+    <string name="common_symptoms_list">
+        <![CDATA[
+            &#8226; fever<br/>
+            &#8226; dry cough<br/>
+            &#8226; tiredness<br/>
+        ]]>
     </string>
+    <string name="less_common_symptoms">Less common symptoms:</string>
+    <string name="less_common_symptoms_list">
+        <![CDATA[
+            &#8226; pain and discomfort<br/>
+            &#8226; sore throat<br/>
+            &#8226; diarrhea<br/>
+            &#8226; conjunctivitis<br/>
+            &#8226; headache<br/>
+            &#8226; loss of taste or smell<br/>
+            &#8226; skin rash or discoloration of fingers or toes<br/>
+        ]]>
+    </string>
+    <string name="transmission_subtitle">The transmission occurs from one sick person to another or through close contact through:</string>
     <string name="transmission_list">
-        The transmission occurs from one sick person to another or through close contact through: \n
-        \n
-        \u2022 Handshake \n
-        \u2022 Spit droplets \n
-        \u2022 Sneeze \n
-        \u2022 Cough \n
-        \u2022 Phlegm \n
-        \u2022 Contaminated objects or surfaces, such as cell phones, tables, door handles, toys, computer keyboards, etc.
+        <![CDATA[
+            &#8226; Handshake<br/>
+            &#8226; Spit droplets<br/>
+            &#8226; Sneeze<br/>
+            &#8226; Cough<br/>
+            &#8226; Phlegm<br/>
+            &#8226; Contaminated objects or surfaces, such as cell phones, tables, door handles, toys, computer keyboards, etc.<br/>
+        ]]>
     </string>
+    <string name="prevemtion_subtitle">The prevention recommendations for COVID-19 are as follows:</string>
     <string name="prevention_list">
-        The prevention recommendations for COVID-19 are as follows: \n
-        \n
-        \u2022 Wash your hands frequently up to the wrists, with soap and water, or sanitized with 70% gel alcohol. \n
-        \u2022 When coughing or sneezing, cover your nose and mouth with a handkerchief or your arm, not your hands. \n
-        \u2022 Avoid touching eyes, nose and mouth with unwashed hands. \n
-        \u2022 When touching, always wash your hands as indicated. \n
-        \u2022 Keep a minimum distance of about 2 meters from anyone coughing or sneezing. \n
-        \u2022 Avoid hugs, kisses and handshakes. Adopt friendly behavior without physical contact, but always with a smile on your face. \n
-        \u2022 Frequently sanitize children\'s cell phones and toys. \n
-        \u2022 Do not share personal items, such as cutlery, towels, plates and glasses. \n
-        \u2022 Keep environments clean and well ventilated. \n
-        \u2022 Avoid unnecessary circulation in the streets, stadiums, theaters, shopping malls, concerts, cinemas and churches. If you can, stay home. \n
-        \u2022 If you are sick, avoid physical contact with other people, especially the elderly and the chronically ill, and stay at home until you get better. \n
-        \u2022 Sleep well and eat healthy. \n
-        \u2022 Use homemade or handmade masks made of fabric when leaving your home. \n
+        <![CDATA[
+            &#8226; Wash your hands frequently up to the wrists, with soap and water, or sanitized with 70% gel alcohol.<br/>
+            &#8226; When coughing or sneezing, cover your nose and mouth with a handkerchief or your arm, not your hands.<br/>
+            &#8226; Avoid touching eyes, nose and mouth with unwashed hands.<br/>
+            &#8226; When touching, always wash your hands as indicated.<br/>
+            &#8226; Keep a minimum distance of about 2 meters from anyone coughing or sneezing.<br/>
+            &#8226; Avoid hugs, kisses and handshakes. Adopt friendly behavior without physical contact, but always with a smile on your face.<br/>
+            &#8226; Frequently sanitize children\'s cell phones and toys.<br/>
+            &#8226; Do not share personal items, such as cutlery, towels, plates and glasses.<br/>
+            &#8226; Keep environments clean and well ventilated.<br/>
+            &#8226; Avoid unnecessary circulation in the streets, stadiums, theaters, shopping malls, concerts, cinemas and churches. If you can, stay home.<br/>
+            &#8226; If you are sick, avoid physical contact with other people, especially the elderly and the chronically ill, and stay at home until you get better.<br/>
+            &#8226; Sleep well and eat healthy.<br/>
+            &#8226; Use homemade or handmade masks made of fabric when leaving your home.<br/>
+        ]]>
     </string>
     <string name="useful_links">Useful links</string>
     <string name="confirmed">Confirmed</string>
@@ -82,7 +65,8 @@
     <string name="deaths">Deaths</string>
     <string name="states">States</string>
     <string name="ministry_of_health">Ministry of Health of Brazil</string>
-    <string name="updatedAt">Updated at</string>
+    <string name="updatedAt">Updated at </string>
+    <string name="updatedAtValue">Updated at %s</string>
     <string name="error">Error</string>
     <string name="atila">Atila Iamarino - Biologist</string>
     <string name="bbc">BBC Brazil</string>
@@ -103,59 +87,80 @@
     <string name="risk_7">7 Moderate-High</string>
     <string name="risk_8">8 High Risk</string>
     <string name="risk_9">9 High Risk</string>
-    <string name="risky_activity_list_1">\u2022 Opening the mail</string>
+    <string name="risky_activity_list_1">
+        <![CDATA[
+            &#8226; Opening the mail<br/>
+        ]]>
+    </string>
     <string name="risky_activity_list_2">
-        \u2022 Getting restaurant takeout \n
-        \u2022 Pumping gasoline \n
-        \u2022 Playing tennis \n
-        \u2022 Going camping \n
+        <![CDATA[
+            &#8226; Getting restaurant takeout<br/>
+            &#8226; Pumping gasoline<br/>
+            &#8226; Playing tennis<br/>
+            &#8226; Going camping<br/>
+        ]]>
     </string>
     <string name="risky_activity_list_3">
-        \u2022 Grocery shopping \n
-        \u2022 Going for a walk,run, or bike ride \n
-        \u2022 Playing gold \n
+        <![CDATA[
+            &#8226; Grocery shopping<br/>
+            &#8226; Going for a walk,run, or bike ride<br/>
+            &#8226; Playing golf<br/>
+        ]]>
     </string>
     <string name="risky_activity_list_4">
-        \u2022 Staying at a hotel for two nights \n
-        \u2022 Sitting in a doctors waiting room \n
-        \u2022 Going to a library or museum \n
-        \u2022 Eating in a restaurant (outside) \n
-        \u2022 Walking in a busy downtown \n
-        \u2022 Spending an hour at a playground \n
+        <![CDATA[
+            &#8226; Staying at a hotel for two nights<br/>
+            &#8226; Sitting in a doctors waiting room<br/>
+            &#8226; Going to a library or museum<br/>
+            &#8226; Eating in a restaurant (outside)<br/>
+            &#8226; Walking in a busy downtown<br/>
+            &#8226; Spending an hour at a playground<br/>
+        ]]>
     </string>
     <string name="risky_activity_list_5">
-        \u2022 Having a dinner at someone elses house \n
-        \u2022 Attending a backyard babecue \n
-        \u2022 Going to a beach or a mall \n
+        <![CDATA[
+            &#8226; Having a dinner at someone elses house<br/>
+            &#8226; Attending a backyard babecue<br/>
+            &#8226; Going to a beach or a mall<br/>
+        ]]>
     </string>
     <string name="risky_activity_list_6">
-        \u2022 Sending kids to school,camp, or day care \n
-        \u2022 Working a week in an office building \n
-        \u2022 Swimming in a public pool \n
-        \u2022 Visiting an elderly relative or friend in their home \n
+        <![CDATA[
+            &#8226; Sending kids to school,camp, or day care<br/>
+            &#8226; Working a week in an office building<br/>
+            &#8226; Swimming in a public pool<br/>
+            &#8226; Visiting an elderly relative or friend in their home<br/>
+        ]]>
     </string>
     <string name="risky_activity_list_7">
-        \u2022 Going to a hair salon or barbershop \n
-        \u2022 Eating in a restaurant (inside) \n
-        \u2022 Attending a wedding or funneral \n
-        \u2022 Traveling by plane \n
-        \u2022 Playing basketball \n
-        \u2022 Hugging or shaking hands when greeting a friend \n
+        <![CDATA[
+            &#8226; Going to a hair salon or barbershop<br/>
+            &#8226; Eating in a restaurant (inside)<br/>
+            &#8226; Attending a wedding or funneral<br/>
+            &#8226; Traveling by plane<br/>
+            &#8226; Playing basketball<br/>
+            &#8226; Hugging or shaking hands when greeting a friend<br/>
+        ]]>
     </string>
     <string name="risky_activity_list_8">
-        \u2022 Eating at a buffet \n
-        \u2022 Working out at a gym \n
-        \u2022 Going to an amusement park or a movie theater \n
+        <![CDATA[
+            &#8226; Eating at a buffet<br/>
+            &#8226; Working out at a gym<br/>
+            &#8226; Going to an amusement park or a movie theater<br/>
+        ]]>
     </string>
     <string name="risky_activity_list_9">
-        \u2022 Attending a large music concert or a sports stadium \n
-        \u2022 Attending a religious service with 500+ worshippers \n
-        \u2022 Going to a bar \n
+        <![CDATA[
+            &#8226; Attending a large music concert or a sports stadium<br/>
+            &#8226; Attending a religious service with 500+ worshippers<br/>
+            &#8226; Going to a bar<br/>
+        ]]>
     </string>
-    <string name="risky_activities_description">This ranking of risky activities was developed by a medical group from the Texas Medical Association Infectious Diseases Committee (TMA). For all activities on the list, doctors assumed that participants would be wearing masks, keeping a distance of at least two meters from unfamiliar people and washing their hands whenever possible</string>
-    <string name="risky_activities">Risk activities</string>
+    <string name="risky_activities_description">See what the risk of contagion each activity offers according to the Texas Medical Association.</string>
+    <string name="risk_of_contagion">Risk of contagion</string>
     <string name="suspects">Suspects</string>
     <string name="refuses">Refuses</string>
     <string name="details">Details</string>
     <string name="state_flag">State\'s flag</string>
+    <string name="useful_links_description">Learn how to make masks, wash your hands properly and more.</string>
 </resources>

@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import com.vitor238.covid19brasil.R
 import com.vitor238.covid19brasil.data.domain.BrazilianState
 import com.vitor238.covid19brasil.databinding.FragmentCasesBinding
 
@@ -52,10 +53,9 @@ class CasesFragment : Fragment() {
         casesViewModel.casesInBrazil.observe(viewLifecycleOwner) { brazil ->
             brazil?.let {
                 binding.textNumberConfirmed.text = brazil.confirmed
-                binding.textNumberActive.text = brazil.cases
                 binding.textRecoveredNumber.text = brazil.recovered
                 binding.textNumberDeaths.text = brazil.deaths
-                binding.textUpdateDate.text = brazil.updatedAt
+                binding.textUpdateDate.text = getString(R.string.updatedAtValue,brazil.updatedAt)
             }
 
         }

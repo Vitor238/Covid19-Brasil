@@ -41,7 +41,6 @@ class CasesRepository(private val database: CasesDatabase) {
             try{
                 val cases = Network.brazil.totalCasesBrazil()
                 database.totalCasesInBrazilDao.insert(cases.data.toDatabaseModel())
-                Log.i(TAG, "refreshCasesInBrazil: ${cases.data}")
             }catch (e:Exception){
                 Log.i(TAG, "refreshCasesInBrazil(): ${e.message}")
             }

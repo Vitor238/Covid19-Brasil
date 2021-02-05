@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.vitor238.covid19brasil.data.domain.RiskyActivity
 import com.vitor238.covid19brasil.databinding.ItemRiskBinding
+import com.vitor238.covid19brasil.utils.extension.fromHTML
 import com.vitor238.covid19brasil.utils.extension.getColorCompat
 
 class RiskyActivitiesAdapter :
@@ -30,9 +31,7 @@ class RiskyActivitiesAdapter :
 
         fun bind(item: RiskyActivity) {
             title.text = title.context.getString(item.title)
-            title.setTextColor(title.context.getColorCompat(item.textColor))
-            riskyActivityList.text = riskyActivityList.context.getString(item.riskyActivities)
-            riskyActivityList.setTextColor(riskyActivityList.context.getColorCompat(item.textColor))
+            riskyActivityList.text = riskyActivityList.context.getString(item.riskyActivities).fromHTML()
             card.setCardBackgroundColor(card.context.getColorCompat(item.backgroundColor))
         }
 

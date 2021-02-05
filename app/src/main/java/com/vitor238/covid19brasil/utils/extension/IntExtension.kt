@@ -5,3 +5,4 @@ import java.text.NumberFormat
 fun Int.formatNumber():String{
     return NumberFormat.getNumberInstance().format(this)
 }
+

@@ -15,7 +15,7 @@
     <item
         android:id="@+id/risksFragment"
         android:icon="@drawable/ic_risky_activities"
-        android:title="@string/risky_activities" />
+        android:title="@string/risk_of_contagion" />
     <item
         android:id="@+id/usefulLinksFragment"
         android:icon="@drawable/ic_mask"

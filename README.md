@@ -12,7 +12,7 @@
 <p align="center">
  <a href="./README-EN.md">Read me English</a> •
  <a href="#sobre">Sobre</a> •
-  <a href="#capturas-de-tela">Capturas de tela</a> •
+ <a href="#capturas-de-tela">Capturas de tela</a> •
  <a href="#baixar-app">Baixar app</a> •
  <a href="#executar-o-projeto">Executar o projeto</a> •
  <a href="#bibliotecas-e-créditos">Bibliotecas e Créditos</a> •
@@ -34,7 +34,7 @@ width="180">
 
 ## Baixar app
 
-Você pode fazer o download clicando neste [link](https://github.com/Vitor238/Covid19-Brasil/releases/download/v1.6.0/covid19brasil.apk)
+Você pode fazer o download clicando neste [link](https://github.com/Vitor238/Covid19-Brasil/releases/download/v2.0.0/covid19brasil.apk)
 
 ## Executar o projeto
 
@@ -64,18 +64,16 @@ Você pode fazer o download clicando neste [link](https://github.com/Vitor238/Co
 
 #### Imagens utilizadas no app
 
-* [Infográfico de coronavírus de mulher com sintomas](https://br.freepik.com/vetores-gratis/infografico-de-coronavirus-de-mulher-com-sintomas_7268263.htm#page=3&query=infografico+covid&position=39)
-
+* Infográfico de sintomas de coronavírus - [Freepik](https://br.freepik.com/vetores/infografico)
 * Icone base do logo - [Anthony Ledoux](https://www.iconfinder.com/Vntole)
-
 * Icones do bottom navigation - [Mangsaabguru](https://www.iconfinder.com/mangsaab) e [KonKapp](https://www.iconfinder.com/konkapp)
-
-* [Bandeiras de estados](https://pt.wikipedia.org/wiki/Lista_de_bandeiras_do_Brasil)
+* Bandeiras de estados - [Wikipedia](https://pt.wikipedia.org/wiki/Lista_de_bandeiras_do_Brasil)
 
 #### Informações de sintomas,prevenção e tratamento
 
 * [Ministério da Saúde](https://coronavirus.saude.gov.br/)
 * [Organização Mundial da Saúde](https://www.who.int/emergencies/diseases/novel-coronavirus-2019)
+* [Gráfico da TMA Mostra Riscos de COVID-19 para Várias Atividades](https://www.texmed.org/TexasMedicineDetail.aspx?id=54216)
 
 ## Licença
 

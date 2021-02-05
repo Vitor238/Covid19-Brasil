@@ -34,7 +34,7 @@ width="180">
 
 ## Download app
 
-You can download it by clicking on this [link](https://github.com/Vitor238/Covid19-Brasil/releases/download/v1.6.0/covid19brasil.apk)
+You can download it by clicking on this [link](https://github.com/Vitor238/Covid19-Brasil/releases/download/v2.0.0/covid19brasil.apk)
 
 ## Building the project
 
@@ -64,15 +64,16 @@ You can download it by clicking on this [link](https://github.com/Vitor238/Covid
 
 #### Images used in the APP
 
-* [Coronavirus infographic of woman having symptoms](https://br.freepik.com/vetores-gratis/infografico-de-coronavirus-de-mulher-com-sintomas_7268263.htm#page=3&query=infografico+covid&position=39)
+* Coronavirus symptoms infographic - [Freepik](https://www.freepik.com/vectors/infographic)
 * Base logo icon - [Anthony Ledoux](https://www.iconfinder.com/Vntole)
 * Bottom navigation icons - [Mangsaabguru](https://www.iconfinder.com/mangsaab) e [KonKapp](https://www.iconfinder.com/konkapp)
-* [State flags](https://pt.wikipedia.org/wiki/Lista_de_bandeiras_do_Brasil)
+* State flags - [Wikipedia](https://pt.wikipedia.org/wiki/Lista_de_bandeiras_do_Brasil)
 
 #### Symptom, prevention and treatment information
 
 * [Ministry of Health of Brazil](https://coronavirus.saude.gov.br/)
 * [World Health Organization](https://www.who.int/emergencies/diseases/novel-coronavirus-2019)
+* [TMA Chart Shows COVID-19 Risks for Various Activities](https://www.texmed.org/TexasMedicineDetail.aspx?id=54216)
 
 ## License
 

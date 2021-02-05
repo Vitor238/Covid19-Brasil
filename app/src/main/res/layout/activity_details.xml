@@ -1,162 +1,168 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/white">
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:background="?attr/colorSurface"
+    tools:context=".ui.symptoms.SymptomsFragment">
 
-    <ImageView
-        android:contentDescription="@string/state_flag"
-        android:id="@+id/image_flag"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:adjustViewBounds="true"
-        android:background="@android:color/white"
-        app:backgroundTint="?attr/colorControlNormal"
-        app:layout_collapseMode="parallax"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:src="@drawable/flag_mg" />
+        android:paddingBottom="8dp">
 
-    <include
-        android:id="@+id/include"
-        layout="@layout/divider"
-        android:layout_width="0dp"
-        android:layout_height="1dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/image_flag" />
+        <ImageView
+            android:contentDescription="@string/state_flag"
+            android:id="@+id/image_flag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            app:backgroundTint="?attr/colorControlNormal"
+            app:layout_collapseMode="parallax"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/flag_mg" />
 
-    <TextView
-        android:id="@+id/text_brazilian_state_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Headline4"
-        android:textColor="@color/black"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/include"
-        tools:text="Minas Gerais" />
+        <include
+            android:id="@+id/include"
+            layout="@layout/divider"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_flag" />
 
-
-    <TextView
-        android:id="@+id/text_cases"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:layout_marginStart="16dp"
-
-        android:layout_marginTop="8dp"
-        android:text="@string/cases"
-        android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text_brazilian_state_name" />
-
-    <TextView
-        android:id="@+id/text_number_cases"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:layout_marginEnd="16dp"
-        android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
-        app:layout_constraintBaseline_toBaselineOf="@+id/text_cases"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:text="100" />
-
-    <TextView
-        android:id="@+id/text_deaths"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/deaths"
-        android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_cases" />
-
-    <TextView
-        android:id="@+id/text_number_deaths"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:layout_marginEnd="16dp"
-        android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
-        app:layout_constraintBaseline_toBaselineOf="@+id/text_deaths"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:text="100" />
+        <TextView
+            android:id="@+id/text_brazilian_state_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Headline4"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/include"
+            tools:text="Minas Gerais" />
 
 
-    <TextView
-        android:id="@+id/text_refuses"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        <TextView
+            android:id="@+id/text_cases"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
 
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/refuses"
-        android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_suspects" />
+            android:layout_marginTop="8dp"
+            android:text="@string/cases"
+            android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_brazilian_state_name" />
 
-    <TextView
-        android:id="@+id/text_number_refuses"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        <TextView
+            android:id="@+id/text_number_cases"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
 
-        android:layout_marginEnd="16dp"
-        android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
-        app:layout_constraintBaseline_toBaselineOf="@+id/text_refuses"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:text="100" />
+           android:layout_marginEnd="8dp"
+            android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
+            app:layout_constraintBaseline_toBaselineOf="@+id/text_cases"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="100" />
 
-    <TextView
-        android:id="@+id/text_suspects"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        <TextView
+            android:id="@+id/text_deaths"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
 
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/suspects"
-        android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_deaths" />
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/deaths"
+            android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_cases" />
 
-    <TextView
-        android:id="@+id/text_number_suspects"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        <TextView
+            android:id="@+id/text_number_deaths"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
 
-        android:layout_marginEnd="16dp"
-        android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
-        app:layout_constraintBaseline_toBaselineOf="@+id/text_suspects"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:text="100" />
+           android:layout_marginEnd="8dp"
+            android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
+            app:layout_constraintBaseline_toBaselineOf="@+id/text_deaths"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="100" />
 
 
-    <TextView
-        android:id="@+id/text_updated_on"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        <TextView
+            android:id="@+id/text_refuses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
 
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/updatedAt"
-        android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_refuses" />
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/refuses"
+            android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_suspects" />
 
-    <TextView
-        android:id="@+id/text_update_date"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
-        app:layout_constraintBaseline_toBaselineOf="@+id/text_updated_on"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:text="100" />
+        <TextView
+            android:id="@+id/text_number_refuses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+           android:layout_marginEnd="8dp"
+            android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
+            app:layout_constraintBaseline_toBaselineOf="@+id/text_refuses"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="100" />
+
+        <TextView
+            android:id="@+id/text_suspects"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/suspects"
+            android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_deaths" />
+
+        <TextView
+            android:id="@+id/text_number_suspects"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_marginEnd="8dp"
+            android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
+            app:layout_constraintBaseline_toBaselineOf="@+id/text_suspects"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="100" />
+
+
+        <TextView
+            android:id="@+id/text_updated_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/updatedAt"
+            android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_refuses" />
+
+        <TextView
+            android:id="@+id/text_update_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_marginEnd="8dp"
+            android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
+            app:layout_constraintBaseline_toBaselineOf="@+id/text_updated_on"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="100" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

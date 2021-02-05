@@ -3,186 +3,226 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:paddingStart="8dp"
+    android:paddingEnd="8dp"
     tools:context=".ui.cases.CasesFragment">
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="wrap_content">
 
         <com.google.android.material.card.MaterialCardView
+            android:id="@+id/materialCardView"
             style="@style/CardStyle"
             android:layout_width="match_parent"
+            android:layout_height="161dp"
+            android:layout_marginTop="8dp"
+            app:cardBackgroundColor="?attr/colorPrimaryVariant"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@null"
+            android:src="@drawable/home"
+            app:layout_constraintStart_toStartOf="@+id/materialCardView"
+            app:layout_constraintTop_toTopOf="@+id/materialCardView" />
+
+        <TextView
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp">
+            android:layout_marginEnd="8dp"
+            android:text="@string/covid_description"
+            android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
+            android:textColor="?attr/colorOnPrimary"
+            app:layout_constraintBottom_toBottomOf="@id/materialCardView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="@id/materialCardView" />
+
+        <TextView
+            android:id="@+id/text_brazil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="8dp"
+            android:text="@string/brazil"
+            android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Headline6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/materialCardView3"
+            style="@style/CardStyle"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            app:cardBackgroundColor="@color/cases_blue"
+            app:layout_constraintEnd_toStartOf="@+id/materialCardView5"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_brazil">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/white"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="4dp"
                 android:orientation="vertical">
 
-                <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="194dp"
-                    android:background="?attr/colorPrimaryVariant">
-
-                    <ImageView
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:layout_gravity="center"
-                        android:contentDescription="@string/cases"
-                        android:src="@drawable/home" />
-                </FrameLayout>
+                <TextView
+                    android:id="@+id/text_number_confirmed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Subtitle2"
+                    android:textColor="?attr/colorOnPrimary"
+                    tools:text="200.000.000" />
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:id="@+id/text_confirmed"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="16dp"
-                    android:text="@string/covid_description"
-                    android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2" />
-
+                    android:text="@string/confirmed"
+                    android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
+                    android:textColor="?attr/colorOnPrimary" />
             </LinearLayout>
+
         </com.google.android.material.card.MaterialCardView>
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="8dp">
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/materialCardView5"
+            style="@style/CardStyle"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:cardBackgroundColor="@color/cases_pink"
+            app:layout_constraintEnd_toStartOf="@+id/materialCardView4"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/materialCardView3"
+            app:layout_constraintTop_toBottomOf="@+id/text_brazil">
 
-            <TextView
-                android:id="@+id/text_brazil"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
+                android:layout_gravity="center_vertical"
                 android:layout_margin="4dp"
-                android:text="@string/brazil"
-                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Headline6" />
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/text_confirmed"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/text_brazil"
-                android:layout_alignParentStart="true"
+                <TextView
+                    android:id="@+id/text_number_deaths"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Subtitle2"
+                    android:textColor="?attr/colorOnPrimary"
+                    android:textStyle="bold"
+                    tools:text="200.000.000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/deaths"
+                    android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
+                    android:textColor="?attr/colorOnPrimary" />
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/materialCardView4"
+            style="@style/CardStyle"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            app:cardBackgroundColor="@color/cases_green"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/materialCardView5"
+            app:layout_constraintTop_toBottomOf="@+id/text_brazil">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
                 android:layout_margin="4dp"
-                android:text="@string/confirmed"
-                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2" />
+                android:gravity="center_vertical"
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/text_number_confirmed"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/text_brazil"
-                android:layout_alignParentEnd="true"
-                android:layout_margin="4dp"
-                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
-                tools:text="0" />
+                <TextView
+                    android:id="@+id/text_recovered_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Subtitle2"
+                    android:textColor="?attr/colorOnPrimary"
+                    android:textStyle="bold"
+                    tools:text="200.000.000" />
 
-            <TextView
-                android:id="@+id/text_active"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/text_confirmed"
-                android:layout_alignParentStart="true"
-                android:layout_margin="4dp"
-                android:text="@string/active"
-                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/recovered"
+                    android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
+                    android:textColor="?attr/colorOnPrimary" />
+            </LinearLayout>
 
-            <TextView
-                android:id="@+id/text_number_active"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/text_confirmed"
-                android:layout_alignParentEnd="true"
-                android:layout_margin="4dp"
-                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
-                tools:text="0" />
+        </com.google.android.material.card.MaterialCardView>
 
-            <TextView
-                android:id="@+id/text_recovered"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/text_active"
-                android:layout_alignParentStart="true"
-                android:layout_margin="4dp"
-                android:text="@string/recovered"
-                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2" />
-
-            <TextView
-                android:id="@+id/text_recovered_number"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/text_active"
-                android:layout_alignParentEnd="true"
-                android:layout_margin="4dp"
-                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
-                tools:text="0" />
-
-            <TextView
-                android:id="@+id/text_deaths"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/text_recovered"
-                android:layout_alignParentStart="true"
-                android:layout_margin="4dp"
-                android:text="@string/deaths"
-                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2" />
-
-            <TextView
-                android:id="@+id/text_number_deaths"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/text_recovered"
-                android:layout_alignParentEnd="true"
-                android:layout_margin="4dp"
-                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
-                tools:text="0" />
-
-            <TextView
-                android:id="@+id/text_updated_on"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/text_number_deaths"
-                android:layout_alignParentStart="true"
-                android:layout_margin="4dp"
-                android:text="@string/updatedAt"
-                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2" />
-
-            <TextView
-                android:id="@+id/text_update_date"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/text_number_deaths"
-                android:layout_alignParentEnd="true"
-                android:layout_margin="4dp"
-                android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Body2"
-                tools:text="0" />
-
-        </RelativeLayout>
+        <TextView
+            android:id="@+id/text_update_date"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_marginTop="8dp"
+            android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Caption"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/materialCardView5"
+            tools:text="Updated at 03 fev 2021" />
 
         <include
+            android:id="@+id/include2"
             layout="@layout/divider"
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:layout_margin="8dp" />
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_update_date" />
 
         <TextView
+            android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
+            android:layout_marginTop="16dp"
             android:text="@string/states"
-            android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Headline6" />
+            android:textAppearance="@style/TextAppearance.MdcTypographyStyles.Headline6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/include2" />
 
         <androidx.recyclerview.widget.RecyclerView
+            android:overScrollMode="never"
             android:id="@+id/recycler_brazilian_states"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
             tools:listitem="@layout/item_brazilian_state" />
-
-    </LinearLayout>
-
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

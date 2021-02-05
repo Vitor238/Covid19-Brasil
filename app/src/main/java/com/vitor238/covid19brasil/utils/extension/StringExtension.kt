@@ -1,7 +1,11 @@
 package com.vitor238.covid19brasil.utils.extension
 
+import android.text.Html
+import android.text.Spanned
+import androidx.core.text.HtmlCompat
 import java.text.SimpleDateFormat
 import java.util.*
+
 
 fun String.formatDate(): String {
     var simpleDateFormat = SimpleDateFormat(
@@ -19,4 +23,11 @@ fun String.formatDate(): String {
         e.printStackTrace()
         ""
     }
+}
+
+fun String.fromHTML():Spanned{
+    return HtmlCompat.fromHtml(
+        this,
+        HtmlCompat.FROM_HTML_MODE_LEGACY
+    )
 }
