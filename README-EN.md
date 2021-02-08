@@ -16,7 +16,7 @@
  <a href="#download-app">Download app</a> •
  <a href="#building-the-project">Building the project</a> •
  <a href="#libraries-and-credits">Libraries and Credits</a> •
- <a href="#licensa">Licença</a>
+ <a href="#license">License</a>
 </p>
 
 ## About
@@ -34,7 +34,9 @@ width="180">
 
 ## Download app
 
-You can download it by clicking on this [link](https://github.com/Vitor238/Covid19-Brasil/releases/download/v2.0.0/covid19brasil.apk)
+You can download it by clicking on this [link](https://github.com/Vitor238/Covid19-Brasil/releases/download/v2.0.1/covid19brasil.apk)
+
+Minimum Android version: Jelly Bean (Android 4.3, API 18)
 
 ## Building the project
 
