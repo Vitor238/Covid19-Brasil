@@ -12,10 +12,10 @@ android {
 
     defaultConfig {
         applicationId "com.vitor238.covid19brasil"
-        minSdkVersion 18
+        minSdkVersion 21
         targetSdkVersion 30
         versionCode 1
-        versionName "2.0.1"
+        versionName "2.0.2"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }

@@ -22,11 +22,9 @@ class MainActivity : AppCompatActivity() {
         binding.bottomNavMain.setupWithNavController(navController)
     }
 
-    private fun setupTransition(){
-        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
-            window.requestFeature(Window.FEATURE_ACTIVITY_TRANSITIONS)
-            setExitSharedElementCallback(MaterialContainerTransformSharedElementCallback())
-            window.sharedElementsUseOverlay = false
-        }
+    private fun setupTransition() {
+        window.requestFeature(Window.FEATURE_ACTIVITY_TRANSITIONS)
+        setExitSharedElementCallback(MaterialContainerTransformSharedElementCallback())
+        window.sharedElementsUseOverlay = false
     }
 }

@@ -34,9 +34,9 @@ width="180">
 
 ## Download app
 
-You can download it by clicking on this [link](https://github.com/Vitor238/Covid19-Brasil/releases/download/v2.0.1/covid19brasil.apk)
+You can download it by clicking on this [link](https://github.com/Vitor238/Covid19-Brasil/releases/download/v2.0.2/covid19brasil.apk)
 
-Minimum Android version: Jelly Bean (Android 4.3, API 18)
+Minimum Android version: Lollipop (Android 5.0, API 21)
 
 ## Building the project
 

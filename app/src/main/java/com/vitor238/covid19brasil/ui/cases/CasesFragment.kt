@@ -34,16 +34,12 @@ class CasesFragment : Fragment() {
 
     private fun openDetails(view: View, brazilianState: BrazilianState) {
         val intent = DetailsActivity.getIntent(requireContext(), brazilianState)
-        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
-            val options = ActivityOptions.makeSceneTransitionAnimation(
-                requireActivity(),
-                view,
-                "transitionActivity"
-            )
-            requireContext().startActivity(intent, options.toBundle())
-        } else {
-            startActivity(intent)
-        }
+        val options = ActivityOptions.makeSceneTransitionAnimation(
+            requireActivity(),
+            view,
+            "transitionActivity"
+        )
+        requireContext().startActivity(intent, options.toBundle())
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
@@ -55,7 +51,7 @@ class CasesFragment : Fragment() {
                 binding.textNumberConfirmed.text = brazil.confirmed
                 binding.textRecoveredNumber.text = brazil.recovered
                 binding.textNumberDeaths.text = brazil.deaths
-                binding.textUpdateDate.text = getString(R.string.updatedAtValue,brazil.updatedAt)
+                binding.textUpdateDate.text = getString(R.string.updatedAtValue, brazil.updatedAt)
             }
 
         }

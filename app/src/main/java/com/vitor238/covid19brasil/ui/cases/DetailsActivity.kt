@@ -48,30 +48,28 @@ class DetailsActivity : AppCompatActivity() {
         return true
     }
 
-    private fun setupTransition(){
-        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
-            window.requestFeature(Window.FEATURE_ACTIVITY_TRANSITIONS)
+    private fun setupTransition() {
+        window.requestFeature(Window.FEATURE_ACTIVITY_TRANSITIONS)
 
-            ViewCompat.setTransitionName(
-                findViewById(android.R.id.content),
-                "transitionActivity"
-            )
+        ViewCompat.setTransitionName(
+            findViewById(android.R.id.content),
+            "transitionActivity"
+        )
 
-            setEnterSharedElementCallback(MaterialContainerTransformSharedElementCallback())
+        setEnterSharedElementCallback(MaterialContainerTransformSharedElementCallback())
 
-            val materialTransform = MaterialContainerTransform().apply {
-                addTarget(android.R.id.content)
-                duration = 450
-                pathMotion = MaterialArcMotion()
-            }
-            window.sharedElementEnterTransition = materialTransform
+        val materialTransform = MaterialContainerTransform().apply {
+            addTarget(android.R.id.content)
+            duration = 450
+            pathMotion = MaterialArcMotion()
         }
+        window.sharedElementEnterTransition = materialTransform
     }
 
 
     companion object {
         private const val BRAZILIAN_STATE = "brazilianState"
-       fun getIntent(context: Context, brazilianState: BrazilianState): Intent {
+        fun getIntent(context: Context, brazilianState: BrazilianState): Intent {
             return Intent(context, DetailsActivity::class.java).apply {
                 putExtra(BRAZILIAN_STATE, brazilianState)
             }
