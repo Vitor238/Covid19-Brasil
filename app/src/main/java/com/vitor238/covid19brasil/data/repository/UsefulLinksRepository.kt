@@ -57,6 +57,12 @@ class UsefulLinksRepository {
             R.string.bbc,
             R.drawable.link_8,
             "https://www.bbc.com/portuguese/internacional-54014416"
+        ),
+        UsefulLink(
+            R.string.link_title_9,
+            R.string.bbc,
+            R.drawable.link_9,
+            "https://youtu.be/LRshvx5XeL4"
         )
     )
 }
