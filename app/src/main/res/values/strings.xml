@@ -14,19 +14,31 @@
         <![CDATA[
             &#8226; fever<br/>
             &#8226; dry cough<br/>
-            &#8226; tiredness<br/>
+            &#8226; fatigue<br/>
         ]]>
     </string>
     <string name="less_common_symptoms">Less common symptoms:</string>
     <string name="less_common_symptoms_list">
         <![CDATA[
-            &#8226; pain and discomfort<br/>
-            &#8226; sore throat<br/>
-            &#8226; diarrhea<br/>
-            &#8226; conjunctivitis<br/>
-            &#8226; headache<br/>
             &#8226; loss of taste or smell<br/>
-            &#8226; skin rash or discoloration of fingers or toes<br/>
+            &#8226; nasal congestion<br/>
+            &#8226; conjunctivitis (also known as red eyes)<br/>
+            &#8226; sore throat<br/>
+            &#8226; headache<br/>
+            &#8226; muscle or joint pain<br/>
+            &#8226; different types of skin rash<br/>
+            &#8226; nausea or vomiting<br/>
+            &#8226; chills or dizziness.<br/>
+        ]]>
+    </string>
+    <string name="severe_covid_symptoms">Symptoms of severe COVID‐19:</string>
+    <string name="severe_covid_symptoms_list">
+        <![CDATA[
+            &#8226; shortness of breath<br/>
+            &#8226; loss of appetite<br/>
+            &#8226; confusion<br/>
+            &#8226; persistent pain or pressure in the chest<br/>
+            &#8226; high temperature (above 38 °C)<br/>
         ]]>
     </string>
     <string name="transmission_subtitle">The transmission occurs from one sick person to another or through close contact through:</string>

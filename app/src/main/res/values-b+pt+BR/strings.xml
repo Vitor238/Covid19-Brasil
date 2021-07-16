@@ -20,13 +20,26 @@
     <string name="less_common_symptoms">Sintomas menos comuns:</string>
     <string name="less_common_symptoms_list">
         <![CDATA[
-            &#8226; dores e desconfortos<br/>
-            &#8226; dor de garganta<br/>
-            &#8226; diarreia<br/>
-            &#8226; conjuntivite<br/>
-            &#8226; dor de cabeça<br/>
             &#8226; perda de paladar ou olfato<br/>
-            &#8226; erupção cutânea na pele ou descoloração dos dedos das mãos ou dos pés<br/>
+            &#8226; congestão nasal<br/>
+            &#8226; olhos vermelhos<br/>
+            &#8226; dor de garganta<br/>
+            &#8226; dor de cabeça<br/>
+            &#8226; dores musculares ou articulares<br/>
+            &#8226; diferentes tipos de erupção cutânea<br/>
+            &#8226; náusea ou vômito<br/>
+            &#8226; diarréia<br/>
+            &#8226; calafrios ou tonturas<br/>
+        ]]>
+    </string>
+    <string name="severe_covid_symptoms">Sintomas graves:</string>
+    <string name="severe_covid_symptoms_list">
+        <![CDATA[
+            &#8226; dificuldade de respirar ou falta de ar<br/>
+            &#8226; perda de apetite<br/>
+            &#8226; confusão<br/>
+            &#8226; dor persistente ou pressão no peito<br/>
+            &#8226; febre (acima de 38°C)<br/>
         ]]>
     </string>
     <string name="transmission_subtitle"> A transmissão acontece de uma pessoa doente para outra ou por contato próximo por meio de:</string>
