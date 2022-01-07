@@ -51,6 +51,8 @@ dependencies {
     def retrofit_version = '2.9.0'
     def room_version = "2.4.0"
     def work_version = "2.7.1"
+    def koin_version= "3.1.4"
+    def ktx_version = "1.4.0"
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.appcompat:appcompat:1.4.0'
@@ -94,4 +96,13 @@ dependencies {
     // WorkManager
     implementation "androidx.work:work-runtime-ktx:$work_version"
 
+    //Koin
+    implementation "io.insert-koin:koin-core:$koin_version"
+    implementation "io.insert-koin:koin-android:$koin_version"
+    implementation "io.insert-koin:koin-androidx-workmanager:$koin_version"
+    testImplementation "io.insert-koin:koin-test-junit4:$koin_version"
+
+    // Actvity and Fragment KTX
+    implementation "androidx.activity:activity-ktx:$ktx_version"
+    implementation "androidx.fragment:fragment-ktx:$ktx_version"
 }
