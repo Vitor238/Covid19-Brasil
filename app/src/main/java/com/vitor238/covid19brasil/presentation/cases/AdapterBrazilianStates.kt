@@ -1,4 +1,4 @@
-package com.vitor238.covid19brasil.ui.cases
+package com.vitor238.covid19brasil.presentation.cases
 
 import android.view.LayoutInflater
 import android.view.View
@@ -10,9 +10,9 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.vitor238.covid19brasil.common.StatesUtils
 import com.vitor238.covid19brasil.data.domain.BrazilianState
 import com.vitor238.covid19brasil.databinding.ItemBrazilianStateBinding
-import com.vitor238.covid19brasil.utils.StatesUtils
 
 class AdapterBrazilianStates(val onClickListener: (view: View, brazilianState: BrazilianState) -> Unit) :
     ListAdapter<BrazilianState, AdapterBrazilianStates.ViewHolder>(BrazilianStatesDiffUtils()) {

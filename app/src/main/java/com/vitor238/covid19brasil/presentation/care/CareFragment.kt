@@ -1,4 +1,4 @@
-package com.vitor238.covid19brasil.ui.care
+package com.vitor238.covid19brasil.presentation.care
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,8 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.vitor238.covid19brasil.R
+import com.vitor238.covid19brasil.common.extension.fromHTML
 import com.vitor238.covid19brasil.databinding.FragmentCareBinding
-import com.vitor238.covid19brasil.utils.extension.fromHTML
 
 class CareFragment : Fragment() {
 

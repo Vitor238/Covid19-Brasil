@@ -1,6 +1,5 @@
-package com.vitor238.covid19brasil.utils.extension
+package com.vitor238.covid19brasil.common.extension
 
-import android.text.Html
 import android.text.Spanned
 import androidx.core.text.HtmlCompat
 import java.text.SimpleDateFormat

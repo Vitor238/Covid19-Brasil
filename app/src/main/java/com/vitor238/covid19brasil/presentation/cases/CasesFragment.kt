@@ -1,4 +1,4 @@
-package com.vitor238.covid19brasil.ui.cases
+package com.vitor238.covid19brasil.presentation.cases
 
 import android.app.ActivityOptions
 import android.os.Bundle

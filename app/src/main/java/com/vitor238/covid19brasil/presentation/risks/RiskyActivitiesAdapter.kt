@@ -1,4 +1,4 @@
-package com.vitor238.covid19brasil.ui.risks
+package com.vitor238.covid19brasil.presentation.risks
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -7,10 +7,10 @@ import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import com.vitor238.covid19brasil.common.extension.fromHTML
+import com.vitor238.covid19brasil.common.extension.getColorCompat
 import com.vitor238.covid19brasil.data.domain.RiskyActivity
 import com.vitor238.covid19brasil.databinding.ItemRiskBinding
-import com.vitor238.covid19brasil.utils.extension.fromHTML
-import com.vitor238.covid19brasil.utils.extension.getColorCompat
 
 class RiskyActivitiesAdapter :
     ListAdapter<RiskyActivity, RiskyActivitiesAdapter.ViewHolder>(RiskyActivitiesDiffUtils()) {

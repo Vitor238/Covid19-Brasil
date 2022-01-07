@@ -1,4 +1,4 @@
-package com.vitor238.covid19brasil.ui.main
+package com.vitor238.covid19brasil.presentation.main
 
 import android.os.Bundle
 import android.view.Window
@@ -11,13 +11,16 @@ import com.vitor238.covid19brasil.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityMainBinding
+    private val binding: ActivityMainBinding by lazy { ActivityMainBinding.inflate(layoutInflater) }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         setupTransition()
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        setupNavController()
+    }
 
+    private fun setupNavController() {
         val navController = findNavController(R.id.nav_host_fragment)
         binding.bottomNavMain.setupWithNavController(navController)
     }

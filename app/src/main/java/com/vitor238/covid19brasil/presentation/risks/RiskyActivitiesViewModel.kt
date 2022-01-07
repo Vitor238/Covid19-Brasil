@@ -1,4 +1,4 @@
-package com.vitor238.covid19brasil.ui.risks
+package com.vitor238.covid19brasil.presentation.risks
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

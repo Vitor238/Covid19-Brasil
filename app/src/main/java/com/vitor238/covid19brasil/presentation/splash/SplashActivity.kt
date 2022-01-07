@@ -1,13 +1,12 @@
-package com.vitor238.covid19brasil.ui.splash
+package com.vitor238.covid19brasil.presentation.splash
 
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
-import com.vitor238.covid19brasil.R
 import com.vitor238.covid19brasil.databinding.ActivitySplashBinding
-import com.vitor238.covid19brasil.ui.main.MainActivity
+import com.vitor238.covid19brasil.presentation.main.MainActivity
 
 class SplashActivity : AppCompatActivity() {
     private lateinit var binding: ActivitySplashBinding

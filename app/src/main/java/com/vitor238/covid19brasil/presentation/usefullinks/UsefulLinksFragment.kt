@@ -1,4 +1,4 @@
-package com.vitor238.covid19brasil.ui.usefullinks
+package com.vitor238.covid19brasil.presentation.usefullinks
 
 import android.content.Intent
 import android.net.Uri

@@ -1,4 +1,4 @@
-package com.vitor238.covid19brasil.ui.cases
+package com.vitor238.covid19brasil.presentation.cases
 
 import android.content.Context
 import android.content.Intent
@@ -11,9 +11,9 @@ import com.google.android.material.transition.platform.MaterialArcMotion
 import com.google.android.material.transition.platform.MaterialContainerTransform
 import com.google.android.material.transition.platform.MaterialContainerTransformSharedElementCallback
 import com.vitor238.covid19brasil.R
+import com.vitor238.covid19brasil.common.StatesUtils
 import com.vitor238.covid19brasil.data.domain.BrazilianState
 import com.vitor238.covid19brasil.databinding.ActivityDetailsBinding
-import com.vitor238.covid19brasil.utils.StatesUtils
 
 class DetailsActivity : AppCompatActivity() {
     private lateinit var binding: ActivityDetailsBinding

@@ -1,4 +1,4 @@
-package com.vitor238.covid19brasil.utils
+package com.vitor238.covid19brasil.common
 
 import androidx.annotation.DrawableRes
 import com.vitor238.covid19brasil.R

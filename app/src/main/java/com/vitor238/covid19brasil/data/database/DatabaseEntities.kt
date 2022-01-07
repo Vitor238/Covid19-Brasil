@@ -2,10 +2,10 @@ package com.vitor238.covid19brasil.data.database
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import com.vitor238.covid19brasil.common.extension.formatDate
+import com.vitor238.covid19brasil.common.extension.formatNumber
 import com.vitor238.covid19brasil.data.domain.Brazil
 import com.vitor238.covid19brasil.data.domain.BrazilianState
-import com.vitor238.covid19brasil.utils.extension.formatDate
-import com.vitor238.covid19brasil.utils.extension.formatNumber
 
 @Entity(tableName =  "total_cases_brazil_table")
 data class DatabaseBrazil(

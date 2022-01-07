@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     android:fillViewport="true"
     android:background="?attr/colorSurface"
-    tools:context=".ui.symptoms.SymptomsFragment">
+    tools:context=".presentation.symptoms.SymptomsFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"

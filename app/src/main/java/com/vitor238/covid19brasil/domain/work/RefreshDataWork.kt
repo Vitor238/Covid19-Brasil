@@ -1,4 +1,4 @@
-package com.vitor238.covid19brasil.work
+package com.vitor238.covid19brasil.domain.work
 
 import android.content.Context
 import androidx.work.CoroutineWorker

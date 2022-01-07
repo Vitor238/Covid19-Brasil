@@ -7,7 +7,7 @@
     android:fillViewport="true"
     android:paddingStart="8dp"
     android:paddingEnd="8dp"
-    tools:context=".ui.symptoms.SymptomsFragment">
+    tools:context=".presentation.symptoms.SymptomsFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"

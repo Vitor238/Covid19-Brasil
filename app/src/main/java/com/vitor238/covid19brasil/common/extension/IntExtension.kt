@@ -1,4 +1,4 @@
-package com.vitor238.covid19brasil.utils.extension
+package com.vitor238.covid19brasil.common.extension
 
 import java.text.NumberFormat
 

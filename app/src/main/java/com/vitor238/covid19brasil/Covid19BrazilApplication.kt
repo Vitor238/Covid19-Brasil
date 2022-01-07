@@ -3,7 +3,7 @@ package com.vitor238.covid19brasil
 import android.app.Application
 import android.os.Build
 import androidx.work.*
-import com.vitor238.covid19brasil.work.RefreshDataWorker
+import com.vitor238.covid19brasil.domain.work.RefreshDataWorker
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
