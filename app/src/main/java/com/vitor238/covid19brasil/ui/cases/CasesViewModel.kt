@@ -26,7 +26,7 @@ class CasesViewModel(application: Application) : AndroidViewModel(application) {
     val casesInBrazil = casesRepository.casesInBrazil
 
     class Factory(val app: Application) : ViewModelProvider.Factory {
-        override fun <T : ViewModel?> create(modelClass: Class<T>): T {
+        override fun <T : ViewModel> create(modelClass: Class<T>): T {
             if (modelClass.isAssignableFrom(CasesViewModel::class.java)) {
                 @Suppress("UNCHECKED_CAST")
                 return CasesViewModel(app) as T
