@@ -9,8 +9,7 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
-import com.vitor238.covid19brasil.common.StatesUtils
+import com.vitor238.covid19brasil.common.extension.setStateFlag
 import com.vitor238.covid19brasil.data.domain.BrazilianState
 import com.vitor238.covid19brasil.databinding.ItemBrazilianStateBinding
 
@@ -38,8 +37,7 @@ class AdapterBrazilianStates(val onClickListener: (view: View, brazilianState: B
 
         fun bind(brazilianState: BrazilianState) {
 
-            Glide.with(imageState.context).load(StatesUtils.getFlag(brazilianState.uf))
-                .into(imageState)
+            imageState.setStateFlag(brazilianState.uf)
             textStateName.text = brazilianState.state
             textNumberConfirmed.text = brazilianState.cases
             textNumberDeaths.text = brazilianState.deaths
@@ -58,9 +56,5 @@ class AdapterBrazilianStates(val onClickListener: (view: View, brazilianState: B
         override fun areContentsTheSame(oldItem: BrazilianState, newItem: BrazilianState): Boolean {
             return oldItem == newItem
         }
-    }
-
-    companion object {
-        private val TAG = AdapterBrazilianStates::class.simpleName
     }
 }

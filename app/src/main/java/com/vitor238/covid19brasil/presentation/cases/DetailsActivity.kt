@@ -6,12 +6,11 @@ import android.os.Bundle
 import android.view.Window
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
-import com.bumptech.glide.Glide
 import com.google.android.material.transition.platform.MaterialArcMotion
 import com.google.android.material.transition.platform.MaterialContainerTransform
 import com.google.android.material.transition.platform.MaterialContainerTransformSharedElementCallback
 import com.vitor238.covid19brasil.R
-import com.vitor238.covid19brasil.common.StatesUtils
+import com.vitor238.covid19brasil.common.extension.setStateFlag
 import com.vitor238.covid19brasil.data.domain.BrazilianState
 import com.vitor238.covid19brasil.databinding.ActivityDetailsBinding
 
@@ -36,9 +35,7 @@ class DetailsActivity : AppCompatActivity() {
             binding.textNumberSuspects.text = brazilianState.suspects
             binding.textNumberRefuses.text = brazilianState.refuses
             binding.textUpdateDate.text = brazilianState.datetime
-
-            Glide.with(this).load(StatesUtils.getFlag(brazilianState.uf))
-                .into(binding.imageFlag)
+            binding.imageFlag.setStateFlag(brazilianState.uf)
         }
 
     }
