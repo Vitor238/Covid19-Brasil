@@ -1,4 +1,4 @@
-package com.vitor238.covid19brasil.data.domain
+package com.vitor238.covid19brasil.domain.model
 
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes

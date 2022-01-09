@@ -1,6 +1,5 @@
-package com.vitor238.covid19brasil.data.domain
+package com.vitor238.covid19brasil.domain.model
 
-import androidx.annotation.ColorInt
 import androidx.annotation.ColorRes
 import androidx.annotation.StringRes
 

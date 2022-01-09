@@ -2,10 +2,10 @@ package com.vitor238.covid19brasil.data.database
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import com.vitor238.covid19brasil.common.extension.formatDate
-import com.vitor238.covid19brasil.common.extension.formatNumber
-import com.vitor238.covid19brasil.data.domain.Brazil
-import com.vitor238.covid19brasil.data.domain.BrazilianState
+import com.vitor238.covid19brasil.domain.model.Brazil
+import com.vitor238.covid19brasil.domain.model.BrazilianState
+import com.vitor238.covid19brasil.utils.extension.formatDate
+import com.vitor238.covid19brasil.utils.extension.formatNumber
 
 @Entity(tableName =  "total_cases_brazil_table")
 data class DatabaseBrazil(
@@ -18,7 +18,7 @@ data class DatabaseBrazil(
     val updatedAt: String
 )
 
-fun DatabaseBrazil.toDomainModel():Brazil{
+fun DatabaseBrazil.toDomainModel(): Brazil {
     return Brazil(
         country = this.country,
         cases = this.cases.formatNumber(),

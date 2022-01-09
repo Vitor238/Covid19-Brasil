@@ -1,4 +1,4 @@
-package com.vitor238.covid19brasil.common.extension
+package com.vitor238.covid19brasil.utils.extension
 
 import android.widget.ImageView
 import com.bumptech.glide.Glide

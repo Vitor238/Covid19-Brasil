@@ -7,10 +7,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
 import com.vitor238.covid19brasil.R
-import com.vitor238.covid19brasil.data.domain.BrazilianState
 import com.vitor238.covid19brasil.databinding.FragmentCasesBinding
+import com.vitor238.covid19brasil.domain.model.BrazilianState
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class CasesFragment : Fragment() {
 
@@ -18,6 +18,7 @@ class CasesFragment : Fragment() {
     private val binding
         get() = _binding!!
     private lateinit var adapterBrazilianStates: AdapterBrazilianStates
+    private val casesViewModel by viewModel<CasesViewModel>()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -25,19 +26,20 @@ class CasesFragment : Fragment() {
     ): View {
         // Inflate the layout for this fragment
         _binding = FragmentCasesBinding.inflate(inflater, container, false)
+        setupAdapter()
+        observeViewModels()
+        return binding.root
+    }
 
-        adapterBrazilianStates = AdapterBrazilianStates { view, brazilianState ->
-            openDetails(view, brazilianState)
-        }
-
-        val casesViewModel = ViewModelProvider(this).get(CasesViewModel::class.java)
+    private fun observeViewModels() {
+        casesViewModel.getCasesInBrazil()
+        casesViewModel.getCasesByState()
 
         casesViewModel.casesInBrazil.observe(viewLifecycleOwner) { brazil ->
             brazil?.let {
                 binding.materialCardConfirmed.isVisible = brazil.confirmed != "0"
                 binding.materialCardDeaths.isVisible = brazil.deaths != "0"
                 binding.materialCardRecovered.isVisible = brazil.recovered != "0"
-
                 binding.textNumberConfirmed.text = brazil.confirmed
                 binding.textRecoveredNumber.text = brazil.recovered
                 binding.textNumberDeaths.text = brazil.deaths
@@ -51,7 +53,12 @@ class CasesFragment : Fragment() {
             adapterBrazilianStates.submitList(it)
         }
 
-        return binding.root
+    }
+
+    private fun setupAdapter() {
+        adapterBrazilianStates = AdapterBrazilianStates { view, brazilianState ->
+            openDetails(view, brazilianState)
+        }
     }
 
     private fun openDetails(view: View, brazilianState: BrazilianState) {

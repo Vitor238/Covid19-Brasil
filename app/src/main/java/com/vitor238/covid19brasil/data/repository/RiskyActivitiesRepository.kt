@@ -1,7 +1,7 @@
 package com.vitor238.covid19brasil.data.repository
 
 import com.vitor238.covid19brasil.R
-import com.vitor238.covid19brasil.data.domain.RiskyActivity
+import com.vitor238.covid19brasil.domain.model.RiskyActivity
 
 class RiskyActivitiesRepository {
     fun getRiskyActivities() = listOf(

@@ -3,8 +3,8 @@ package com.vitor238.covid19brasil.presentation.risks
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.vitor238.covid19brasil.data.domain.RiskyActivity
 import com.vitor238.covid19brasil.data.repository.RiskyActivitiesRepository
+import com.vitor238.covid19brasil.domain.model.RiskyActivity
 
 class RiskyActivitiesViewModel : ViewModel() {
     private val riskyActivitiesRepository = RiskyActivitiesRepository()

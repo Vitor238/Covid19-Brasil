@@ -3,11 +3,13 @@ package com.vitor238.covid19brasil.domain.work
 import android.content.Context
 import androidx.work.CoroutineWorker
 import androidx.work.WorkerParameters
-import com.vitor238.covid19brasil.data.database.getDatabase
-import com.vitor238.covid19brasil.data.repository.CasesRepository
+import com.vitor238.covid19brasil.domain.repository.CasesRepository
 import retrofit2.HttpException
 
-class RefreshDataWorker(appContext: Context, params: WorkerParameters):
+class RefreshDataWorker(
+    appContext: Context,
+    private val repository: CasesRepository, params: WorkerParameters
+) :
     CoroutineWorker(appContext, params) {
 
     companion object {
@@ -15,8 +17,6 @@ class RefreshDataWorker(appContext: Context, params: WorkerParameters):
     }
 
     override suspend fun doWork(): Result {
-        val database = getDatabase(applicationContext)
-        val repository = CasesRepository(database)
         return try {
             repository.refreshCasesByState()
             repository.refreshCasesInBrazil()

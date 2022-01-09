@@ -10,9 +10,9 @@ import com.google.android.material.transition.platform.MaterialArcMotion
 import com.google.android.material.transition.platform.MaterialContainerTransform
 import com.google.android.material.transition.platform.MaterialContainerTransformSharedElementCallback
 import com.vitor238.covid19brasil.R
-import com.vitor238.covid19brasil.common.extension.setStateFlag
-import com.vitor238.covid19brasil.data.domain.BrazilianState
 import com.vitor238.covid19brasil.databinding.ActivityDetailsBinding
+import com.vitor238.covid19brasil.domain.model.BrazilianState
+import com.vitor238.covid19brasil.utils.extension.setStateFlag
 
 class DetailsActivity : AppCompatActivity() {
     private lateinit var binding: ActivityDetailsBinding
@@ -22,13 +22,12 @@ class DetailsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityDetailsBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        setupToolbar()
+        getIntentExtras()
+    }
 
-        supportActionBar?.title = getString(R.string.details)
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_baseline_close_24)
-
+    private fun getIntentExtras() {
         intent.getParcelableExtra<BrazilianState>(BRAZILIAN_STATE)?.let { brazilianState ->
-
             binding.textBrazilianStateName.text = brazilianState.state
             binding.textNumberCases.text = brazilianState.cases
             binding.textNumberDeaths.text = brazilianState.deaths
@@ -37,7 +36,12 @@ class DetailsActivity : AppCompatActivity() {
             binding.textUpdateDate.text = brazilianState.datetime
             binding.imageFlag.setStateFlag(brazilianState.uf)
         }
+    }
 
+    private fun setupToolbar() {
+        supportActionBar?.title = getString(R.string.details)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_baseline_close_24)
     }
 
     override fun onSupportNavigateUp(): Boolean {

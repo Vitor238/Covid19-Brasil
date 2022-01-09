@@ -9,9 +9,9 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.vitor238.covid19brasil.common.extension.setStateFlag
-import com.vitor238.covid19brasil.data.domain.BrazilianState
 import com.vitor238.covid19brasil.databinding.ItemBrazilianStateBinding
+import com.vitor238.covid19brasil.domain.model.BrazilianState
+import com.vitor238.covid19brasil.utils.extension.setStateFlag
 
 class AdapterBrazilianStates(val onClickListener: (view: View, brazilianState: BrazilianState) -> Unit) :
     ListAdapter<BrazilianState, AdapterBrazilianStates.ViewHolder>(BrazilianStatesDiffUtils()) {
