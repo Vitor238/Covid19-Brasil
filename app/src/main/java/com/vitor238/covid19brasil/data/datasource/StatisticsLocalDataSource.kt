@@ -6,11 +6,11 @@ import com.vitor238.covid19brasil.data.database.TotalCasesInBrazilDao
 
 class StatisticsLocalDataSource(private val roomDatabase: CasesDatabase) : DataSource.Local {
 
-    override fun getTotalCasesInBrazil(): TotalCasesInBrazilDao {
+    override fun getCasesInBrazilDao(): TotalCasesInBrazilDao {
         return roomDatabase.totalCasesInBrazilDao
     }
 
-    override fun getCasesByState(): CasesByStateDao {
+    override fun getCasesByStateDao(): CasesByStateDao {
         return roomDatabase.casesByStateDao
     }
 }

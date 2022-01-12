@@ -7,44 +7,47 @@ import com.vitor238.covid19brasil.data.datasource.DataSource
 import com.vitor238.covid19brasil.domain.repository.CasesRepository
 import com.vitor238.covid19brasil.domain.toDatabaseModel
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.withContext
+import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.catch
+import kotlinx.coroutines.flow.collect
+import kotlinx.coroutines.flow.flowOn
 
 class CasesRepositoryImpl(
     private val localDataSource: DataSource.Local,
     private val remoteDataSource: DataSource.Remote
 ) : CasesRepository {
 
-    override suspend fun getCasesInBrazil(): DatabaseBrazil {
-        return localDataSource.getTotalCasesInBrazil().getTotalCasesInBrazil()
+    override suspend fun getCasesInBrazil(): Flow<DatabaseBrazil> {
+        return localDataSource.getCasesInBrazilDao().getTotalCasesInBrazil()
     }
 
-    override suspend fun getCasesByState(): List<DatabaseBrazilianState> {
-        return localDataSource.getCasesByState().getCasesByState()
+    override suspend fun getCasesByState(): Flow<List<DatabaseBrazilianState>> {
+        return localDataSource.getCasesByStateDao().getCasesByState()
     }
 
     override suspend fun refreshCasesByState() {
-        withContext(Dispatchers.IO) {
-            try {
-                val list = remoteDataSource.getBrazilianStates()
-                localDataSource.getCasesByState().insertAll(*list.toDatabaseModel())
-            } catch (e: Exception) {
+        remoteDataSource.getBrazilianStates()
+            .flowOn(Dispatchers.IO)
+            .catch { e ->
                 Log.i(TAG, "refreshCasesByState: ${e.message}")
             }
-        }
+            .collect { list ->
+                localDataSource.getCasesByStateDao().insertAll(*list.toDatabaseModel())
+            }
     }
 
     override suspend fun refreshCasesInBrazil() {
-        withContext(Dispatchers.IO) {
-            try {
-                val cases = remoteDataSource.getCasesInBrazil()
-                localDataSource.getTotalCasesInBrazil().insert(cases.toDatabaseModel())
-            } catch (e: Exception) {
+        remoteDataSource.getCasesInBrazil()
+            .flowOn(Dispatchers.IO)
+            .catch { e ->
                 Log.i(TAG, "refreshCasesInBrazil(): ${e.message}")
             }
-        }
+            .collect { cases ->
+                localDataSource.getCasesInBrazilDao().insert(cases.toDatabaseModel())
+            }
     }
 
-    companion object{
+    companion object {
         private val TAG = CasesRepository::class.simpleName
     }
 
