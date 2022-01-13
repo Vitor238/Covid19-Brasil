@@ -10,8 +10,6 @@ import com.vitor238.covid19brasil.domain.usecases.GetCasesByStateUseCase
 import com.vitor238.covid19brasil.domain.usecases.GetCasesInBrazilUseCase
 import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.collect
-import kotlinx.coroutines.flow.launchIn
-import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.launch
 
 class CasesViewModel(
@@ -27,10 +25,17 @@ class CasesViewModel(
     val casesInBrazil: LiveData<Brazil>
         get() = _casesInBrazil
 
+    private var _errorMessage = MutableLiveData<String>()
+    val errorMessage: LiveData<String>
+        get() = _errorMessage
+
 
     fun getCasesByState() {
         viewModelScope.launch {
             getCasesByStateUseCase()
+                .catch { e ->
+                    _errorMessage.value = e.localizedMessage ?: e.message
+                }
                 .collect {
                     _casesByState.value = it
                 }
@@ -40,13 +45,11 @@ class CasesViewModel(
     fun getCasesInBrazil() {
         viewModelScope.launch {
             getCasesInBrazilUseCase()
-                .onEach {
+                .catch { e ->
+                    _errorMessage.value = e.localizedMessage ?: e.message
+                }.collect {
                     _casesInBrazil.value = it
                 }
-                .catch {
-
-                }
-                .launchIn(viewModelScope)
         }
     }
 }

@@ -14,7 +14,7 @@ class GetCasesByStateUseCase(private val casesRepository: CasesRepository) {
     suspend operator fun invoke(): Flow<List<BrazilianState>> = flow {
         casesRepository.refreshCasesByState()
         casesRepository.getCasesByState().catch { e ->
-            Log.i("UC", "invoke: ${e.message} ")
+            Log.i(GetCasesByStateUseCase::class.simpleName, "invoke: ${e.message} ")
         }.collect { list ->
             emit(list.sortedByDescending { it.cases }.toDomainModel())
         }

@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
+import com.google.android.material.snackbar.Snackbar
 import com.vitor238.covid19brasil.R
 import com.vitor238.covid19brasil.databinding.FragmentCasesBinding
 import com.vitor238.covid19brasil.domain.model.BrazilianState
@@ -27,14 +28,20 @@ class CasesFragment : Fragment() {
         // Inflate the layout for this fragment
         _binding = FragmentCasesBinding.inflate(inflater, container, false)
         setupAdapter()
-        observeViewModels()
+        observeCasesInBrazil()
+        observeCasesByState()
+        observerErrors()
         return binding.root
     }
 
-    private fun observeViewModels() {
-        casesViewModel.getCasesInBrazil()
-        casesViewModel.getCasesByState()
+    private fun observerErrors() {
+        casesViewModel.errorMessage.observe(viewLifecycleOwner) {
+            Snackbar.make(binding.root, it, Snackbar.LENGTH_SHORT).show()
+        }
+    }
 
+    private fun observeCasesInBrazil() {
+        casesViewModel.getCasesInBrazil()
         casesViewModel.casesInBrazil.observe(viewLifecycleOwner) { brazil ->
             brazil?.let {
                 binding.materialCardConfirmed.isVisible = brazil.confirmed != "0"
@@ -47,12 +54,14 @@ class CasesFragment : Fragment() {
             }
 
         }
+    }
 
+    private fun observeCasesByState() {
+        casesViewModel.getCasesByState()
         casesViewModel.casesByState.observe(viewLifecycleOwner) {
             binding.recyclerBrazilianStates.adapter = adapterBrazilianStates
             adapterBrazilianStates.submitList(it)
         }
-
     }
 
     private fun setupAdapter() {

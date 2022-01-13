@@ -14,7 +14,7 @@ class GetCasesInBrazilUseCase(private val casesRepository: CasesRepository) {
         casesRepository.refreshCasesInBrazil()
         casesRepository.getCasesInBrazil()
             .catch { e ->
-                Log.i("UC", "invoke: ${e.message} ")
+                Log.i(GetCasesInBrazilUseCase::class.simpleName, "invoke: ${e.message} ")
             }.collect { cases ->
                 emit(cases.toDomainModel())
             }
